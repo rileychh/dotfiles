@@ -1,0 +1,3 @@
+WARN  2021-07-01T01:31:19.946 167970 log_path_init:95: Failed to create directory /home/cheng/.cache/nvim for writing logs: Unknown system error 1
+WARN  2021-07-01T01:31:20.260 167973 log_path_init:95: Failed to create directory /home/cheng/.cache/nvim for writing logs: Unknown system error 1
+WARN  2021-07-01T01:35:05.824 168529 log_path_init:95: Failed to create directory /home/cheng/.cache/nvim for writing logs: Unknown system error 1

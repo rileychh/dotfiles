@@ -1,0 +1,148 @@
+{
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  // "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 2560, // Waybar width
+  // Choose the order of the modules
+  // "modules-left": ["river/tags", "sway/workspaces"],
+  "modules-left": ["clock", "custom/weather", "custom/media"],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "disk",
+    "network",
+    "custom/im",
+    "custom/pacman",
+    "tray"
+  ],
+  // Modules configuration
+  "river/tags": {
+    "num-tags": 6
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a %Y/%m/%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/weather": {
+    "exec": "curl -s 'wttr.in/tpe?format=1'",
+    "interval": 3600,
+    "on-click": "alacritty -e bash -c \"curl 'v2.wttr.in/tpe'; read -rsn1 -p ''\""
+  },
+  "custom/media": {
+    "return-type": "json",
+    "interval": 2,
+    "exec": "$XDG_CONFIG_HOME/waybar/media.fish waybar",
+    "exec-if": "true",
+    "max-length": 40
+  },
+  "cpu": {
+    "interval": 2,
+    "format": " {usage}%",
+    "on-click": "alacritty -e btm"
+  },
+  "memory": {
+    "interval": 2,
+    "format": " {percentage}%"
+  },
+  "temperature": {
+    "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp2_input",
+    "critical-threshold": 80,
+    "interval": 20,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": ["ﰕ", "", ""]
+  },
+  "battery": {
+    "interval": 2,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon}  {time}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "backlight": {
+    "interval": 2,
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", ""],
+    "on-scroll-up": "sudo light -A 1",
+    "on-scroll-down": "sudo light -U 1"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}% {format_source}",
+    "format-muted": "ﱝ {format_source}",
+    "format-bluetooth": "{icon}  {volume}%{format_source}",
+    "format-bluetooth-muted": "ﱝ  {format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "default": ["奄", "奔", "墳"],
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": ""
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "on-scroll-up": "pamixer -ui 1",
+    "on-scroll-down": "pamixer -ud 1"
+  },
+  "disk": {
+    "interval": 2,
+    "format": " {percentage_used}%"
+  },
+  "network": {
+    "format-wifi": "直 {essid}",
+    "format-ethernet": " {ipaddr}/{cidr}",
+    "format-linked": " {ifname} (No IP)",
+    "format-disconnected": "睊",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "interval": 2,
+    "on-click-right": "exec alacritty -e iwctl"
+  },
+  "custom/im": {
+    "return-type": "json",
+    "interval": 2,
+    "exec": "$XDG_CONFIG_HOME/waybar/im.fish",
+    "exec-if": "true"
+  },
+  "custom/pacman": {
+    "exec": "checkupdates | wc -l",
+    "exec-if": "true",
+    "format": " {}",
+    "interval": 3600,
+    "on-click": "alacritty -e paru; pkill -SIGRTMIN+8 waybar",
+    "signal": 8
+  },
+  "wlr/taskbar": {
+    "format": "{app_id}",
+    "icon-theme": "Papirus",
+    "icon-size": 15,
+    "on-click": "activate",
+    "markup": true,
+    "max-length": 7,
+    "on-click-right": "minimize",
+    "on-click-middle": "close"
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  }
+}
+// vi: ft=jsonc syn=json

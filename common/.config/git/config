@@ -1,0 +1,7 @@
+[user]
+	email = chenghsuan@protonmail.com
+	name = Chenghsuan Ho
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false

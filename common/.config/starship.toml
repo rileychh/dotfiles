@@ -1,0 +1,16 @@
+[directory]
+fish_style_pwd_dir_length = 1
+read_only = " 🔒"
+
+[jobs]
+format = "[$symbol $number ]($style)"
+
+[status]
+format = "[$status ]($style)"
+disabled = false
+
+[character]
+format = "$symbol  "
+success_symbol = "[➜](bold green)"
+error_symbol = "[✖](bold red)"
+vicmd_symbol = "[](green)"
