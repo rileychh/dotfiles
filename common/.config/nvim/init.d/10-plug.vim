@@ -11,7 +11,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 
-                                               " features
+" features
 Plug 'neovim/nvim-lspconfig'                   " lint
 Plug 'kabouzeid/nvim-lspinstall'               " language server installer
 Plug 'nvim-lua/completion-nvim'                " completion
