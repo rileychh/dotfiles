@@ -13,7 +13,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " features
 Plug 'neovim/nvim-lspconfig'                   " lint
-Plug 'kabouzeid/nvim-lspinstall'               " language server installer
+Plug 'williamboman/nvim-lsp-installer'         " language server installer
 Plug 'nvim-lua/completion-nvim'                " completion
 Plug 'tpope/vim-commentary'                    " comments
 Plug 'tpope/vim-fugitive'                      " git
