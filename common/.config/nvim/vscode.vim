@@ -2,6 +2,11 @@ call plug#begin()
 Plug 'tpope/vim-surround'                      " surround objects
 call plug#end()
 
+xmap gc  <Plug>VSCodeCommentary
+nmap gc  <Plug>VSCodeCommentary
+omap gc  <Plug>VSCodeCommentary
+nmap gcc <Plug>VSCodeCommentaryLine
+
 let mapleader=' '
 
 " Window controls
@@ -12,10 +17,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Buffer contols
-nnoremap <Tab>      <Cmd>bnext<CR>
-nnoremap <S-Tab>    <Cmd>bprevious<CR>
-nnoremap <Leader>bb <Cmd>files<CR>:buffer<Space>
-nnoremap <Leader>bd <Cmd>bdelete<CR>
+nnoremap <Tab>      <Cmd>tabnext<CR>
+nnoremap <S-Tab>    <Cmd>tabprevious<CR>
 
 " Files
 nnoremap <Leader>fw <Cmd>wa<CR>
@@ -36,6 +39,9 @@ noremap <Leader>y "+y
 noremap <Leader>p "+p
 noremap <Leader>Y "+Y
 noremap <Leader>P "+P
+
+" Open configuration files
+nnoremap <Leader>kc <Cmd>edit $XDG_CONFIG_HOME/nvim/vscode.vim<CR>
 
 set ignorecase smartcase                                      " case insensitive search
 set hidden                                                    " allow unsaved hidden buffer
