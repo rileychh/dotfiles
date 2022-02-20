@@ -17,6 +17,8 @@ SETUVAR --export RUSTUP_HOME:/home/cheng/\x2elocal/share/rustup
 SETUVAR --export TERM:alacritty
 SETUVAR --export TerminalEmulator:alacritty
 SETUVAR --export VISUAL:nvim
+SETUVAR --export WINEARCH:win32
+SETUVAR --export WINEPREFIX:/home/cheng/\x2elocal/share/wineprefixes/default
 SETUVAR --export XDG_CACHE_HOME:/home/cheng/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/cheng/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/cheng/\x2elocal/share
