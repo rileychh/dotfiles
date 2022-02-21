@@ -13,6 +13,7 @@ SETUVAR --export MANPAGER:sh\x20\x2dc\x20\x22unset\x20MANPAGER\x3b\x20col\x20\x2
 SETUVAR --export MOZ_ENABLE_WAYLAND:1
 SETUVAR --export NODE_REPL_HISTORY:/home/cheng/\x2elocal/share/node_repl_history
 SETUVAR --export NPM_CONFIG_USERCONFIG:/home/cheng/\x2econfig/npm/npmrc
+SETUVAR --export PYTHONSTARTUP:/home/cheng/\x2econfig/python/startup\x2epy
 SETUVAR --export RUSTUP_HOME:/home/cheng/\x2elocal/share/rustup
 SETUVAR --export TERM:alacritty
 SETUVAR --export TerminalEmulator:alacritty
@@ -24,6 +25,7 @@ SETUVAR --export XDG_CONFIG_HOME:/home/cheng/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/cheng/\x2elocal/share
 SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/cheng/\x2econfig/java
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_cp:rsync\x20\x2dah\x20\x2d\x2dinfo\x3dprogress2
 SETUVAR _fish_abbr_dot:git\x20\x2d\x2dgit\x2ddir\x3d/home/cheng/\x2egit\x20\x2d\x2dwork\x2dtree\x3d/home/cheng
 SETUVAR _fish_abbr_s:systemctl
 SETUVAR _fish_abbr_se:systemctl\x20enable
