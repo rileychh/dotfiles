@@ -24,7 +24,7 @@ SETUVAR --export XDG_CACHE_HOME:/home/cheng/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/cheng/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/cheng/\x2elocal/share
 SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/cheng/\x2econfig/java
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_cp:rsync\x20\x2dah\x20\x2d\x2dinfo\x3dprogress2
 SETUVAR _fish_abbr_dot:git\x20\x2d\x2dgit\x2ddir\x3d/home/cheng/\x2egit\x20\x2d\x2dwork\x2dtree\x3d/home/cheng
 SETUVAR _fish_abbr_s:systemctl
@@ -61,4 +61,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/cheng/\x2elocal/bin/
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/opt/intelFPGA/20\x2e1/modelsim_ase/bin\x1e/opt/intelFPGA/21\x2e1/quartus/bin\x1e/home/cheng/\x2elocal/share/npm/bin\x1e/home/cheng/\x2elocal/bin/
