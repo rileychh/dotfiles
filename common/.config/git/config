@@ -1,7 +1,7 @@
 [user]
 	email = chengxuanjhe@gmail.com
 	name = Chenghsuan Ho
-	signingkey = /home/cheng/.ssh/id_ed25519.pub
+	signingkey = ~/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
 [pull]
