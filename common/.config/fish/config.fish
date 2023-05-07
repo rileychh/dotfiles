@@ -17,3 +17,6 @@ abbr -a ss 'systemctl status'
 abbr -a sr 'systemctl restart'
 abbr -a d docker
 abbr -a dc 'docker compose'
+abbr -a r ranger-cd
+abbr -a vi nvim
+
