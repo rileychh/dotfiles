@@ -25,13 +25,6 @@ SETUVAR --export XDG_CONFIG_HOME:/home/cheng/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/cheng/\x2elocal/share
 SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/cheng/\x2econfig/java
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_cp:rsync\x20\x2dah\x20\x2d\x2dinfo\x3dprogress2
-SETUVAR _fish_abbr_dot:git\x20\x2d\x2dgit\x2ddir\x3d/home/cheng/\x2egit\x20\x2d\x2dwork\x2dtree\x3d/home/cheng
-SETUVAR _fish_abbr_s:systemctl
-SETUVAR _fish_abbr_se:systemctl\x20enable
-SETUVAR _fish_abbr_sen:systemctl\x20enable\x20\x2d\x2dnow
-SETUVAR _fish_abbr_sr:systemctl\x20restart
-SETUVAR _fish_abbr_ss:systemctl\x20status
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
