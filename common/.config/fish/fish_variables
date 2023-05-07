@@ -4,6 +4,7 @@ SETUVAR --export BROWSER:firefox
 SETUVAR --export CARGO_HOME:/home/cheng/\x2elocal/share/cargo
 SETUVAR --export --path CCACHE_CONFIGPATH:/home/cheng/\x2econfig/ccache\x2econf
 SETUVAR --export CCACHE_DIR:/home/cheng/\x2ecache/ccache
+SETUVAR --export CHROME_EXECUTABLE:/usr/bin/chromium
 SETUVAR --export EDITOR:nvim
 SETUVAR --export FZF_DEFAULT_COMMAND:find\x20\x2e
 SETUVAR --export GNUPGHOME:/home/cheng/\x2elocal/share/gnupg
@@ -13,10 +14,9 @@ SETUVAR --export MANPAGER:sh\x20\x2dc\x20\x22unset\x20MANPAGER\x3b\x20col\x20\x2
 SETUVAR --export MOZ_ENABLE_WAYLAND:1
 SETUVAR --export NODE_REPL_HISTORY:/home/cheng/\x2elocal/share/node_repl_history
 SETUVAR --export NPM_CONFIG_USERCONFIG:/home/cheng/\x2econfig/npm/npmrc
+SETUVAR --export PUB_CACHE:/home/cheng/\x2ecache/pub
 SETUVAR --export PYTHONSTARTUP:/home/cheng/\x2econfig/python/startup\x2epy
 SETUVAR --export RUSTUP_HOME:/home/cheng/\x2elocal/share/rustup
-SETUVAR --export TERM:alacritty
-SETUVAR --export TerminalEmulator:alacritty
 SETUVAR --export VISUAL:nvim
 SETUVAR --export WINEARCH:win32
 SETUVAR --export WINEPREFIX:/home/cheng/\x2elocal/share/wineprefixes/default
@@ -62,4 +62,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/opt/intelFPGA/20\x2e1/modelsim_ase/bin\x1e/opt/intelFPGA/21\x2e1/quartus/bin\x1e/home/cheng/\x2elocal/share/npm/bin\x1e/home/cheng/\x2elocal/bin/
+SETUVAR fish_user_paths:/home/cheng/\x2elocal/share/cargo/bin\x1e/usr/lib/jvm/java\x2d19\x2dopenjdk/bin/\x1e/home/cheng/\x2epub\x2dcache/bin\x1e/opt/android\x2dsdk/cmdline\x2dtools/latest/bin\x1e/opt/flutter/bin
