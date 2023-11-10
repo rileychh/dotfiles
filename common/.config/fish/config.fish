@@ -11,31 +11,35 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 
 # pnpm
-set -gx PNPM_HOME "/home/cheng/.local/share/pnpm"
+set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 
 # Flutter
 set -gx CHROME_EXECUTABLE /usr/bin/chromium
-set -gx PUB_CACHE /home/cheng/.cache/pub
+set -gx PUB_CACHE $HOME/.cache/pub
 
 # Disable history
-set -gx HISTFILE /home/cheng/.local/share/bash/history
+set -gx HISTFILE $HOME/.local/share/bash/history
 set -gx LESSHISTFILE "-"
 
 # Keep the home directory clean
-set -gx CARGO_HOME /home/cheng/.local/share/cargo
-set -gx CCACHE_CONFIGPATH /home/cheng/.config/ccache.conf
-set -gx CCACHE_DIR /home/cheng/.cache/ccache
-set -gx GNUPGHOME /home/cheng/.local/share/gnupg
-set -gx NODE_REPL_HISTORY /home/cheng/.local/share/node_repl_history
-set -gx NPM_CONFIG_USERCONFIG /home/cheng/.config/npm/npmrc
-set -gx PYTHONSTARTUP /home/cheng/.config/python/startup.py
-set -gx RUSTUP_HOME /home/cheng/.local/share/rustup
-set -gx _JAVA_OPTIONS "-Djava.util.prefs.userRoot=/home/cheng/.config/java"
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_CACHE_HOME $HOME/.cache
+set -gx XDG_DATA_HOME $HOME/.local/share
 
-set -gx XDG_CACHE_HOME /home/cheng/.cache
-set -gx XDG_CONFIG_HOME /home/cheng/.config
-set -gx XDG_DATA_HOME /home/cheng/.local/share
+set -gx CARGO_HOME $XDG_DATA_HOME/cargo
+set -gx CCACHE_CONFIGPATH $XDG_CONFIG_HOME/ccache.conf
+set -gx CCACHE_DIR $XDG_CACHE_HOME/ccache
+set -gx GNUPGHOME $XDG_DATA_HOME/gnupg
+set -gx NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
+set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
+set -gx PYTHONSTARTUP $XDG_CONFIG_HOME/python/startup.py
+set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
+set -gx _JAVA_OPTIONS "-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java"
+set -gx GOPATH $XDG_DATA_HOME/go
+set -gx GOMODCACHE $XDG_CACHE_HOME/go/mod
+set -gx GRADLE_USER_HOME $XDG_DATA_HOME/gradle
+abbr -a wget 'wget --hsts-file=$XDG_CACHE_HOME/wget-hsts'
 
 # Abbreviations
 abbr -a s systemctl
@@ -43,7 +47,6 @@ abbr -a ss 'systemctl status'
 abbr -a se 'systemctl enable'
 abbr -a sen 'systemctl enable --now'
 abbr -a sr 'systemctl restart'
-abbr -a cp 'rsync -ah --info=progress2'
 abbr -a d docker
 abbr -a dc 'docker compose'
 abbr -a r ranger-cd
