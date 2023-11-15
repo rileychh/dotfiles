@@ -35,7 +35,6 @@ set -gx NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
 set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
 set -gx PYTHONSTARTUP $XDG_CONFIG_HOME/python/startup.py
 set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
-set -gx _JAVA_OPTIONS "-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java"
 set -gx GOPATH $XDG_DATA_HOME/go
 set -gx GOMODCACHE $XDG_CACHE_HOME/go/mod
 set -gx GRADLE_USER_HOME $XDG_DATA_HOME/gradle
