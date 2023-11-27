@@ -1,3 +1,3 @@
 function ls --description 'List contents of directory'
-    exa -bghFm --icons --color-scale --group-directories-first --git --time-style=iso $argv
+    eza -bghFm --icons --color-scale=all --group-directories-first --git --time-style=iso $argv
 end
