@@ -1,13 +1,37 @@
 patch:
   recognizer/patterns/reverse_lookup:
-  punctuator:
-    full_shape:
-      "`": { commit: "`" }
-    half_shape:
-      "`": { commit: "`" }
+  punctuator/half_shape:
+    # Make single-choice half-shape characters commit directly
+    '+': { commit: '+' }
+    '=': { commit: '=' }
+    '#': { commit: '#' }
+    '&': { commit: '&' }
+    '=': { commit: '=' }
+    '@': { commit: '@' }
+    '`': { commit: '`' }
+    '~': { commit: '~' }
+    "(": { commit: "（" }
+    ")": { commit: "）" }
+    # The rest are the defaults
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["%", "％", "°", "℃"]
+    "'": {pair: ["‘", "’"]}
+    "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+    ":": ["：", "；"]
+    "<": {commit: "，"}
+    ">": {commit: "。"}
+    "?": ["？", "／", "/", "÷"]
+    "[": ["「", "【", "《", "〔", "［"]
+    "\\": ["、", "\\", "＼"]
+    "]": ["」", "】", "》", "〕", "］"]
+    "^": {commit: "……"}
+    _: ["——", "－", "-"]
+    "{": ["『", "〖", "〈", "｛"]
+    "|": ["·", "|", "｜", "§", "¦"]
+    "}": ["』", "〗", "〉", "｝"]
   menu:
     alternative_select_labels: [A, S, D, F, G, H, J, K, L]
     alternative_select_keys: ASDFGHJKL
     page_size: 9
-  style:
-    inline_preedit: false
