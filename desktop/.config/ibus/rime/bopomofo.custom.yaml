@@ -1,0 +1,13 @@
+patch:
+  recognizer/patterns/reverse_lookup:
+  punctuator:
+    full_shape:
+      "`": { commit: "`" }
+    half_shape:
+      "`": { commit: "`" }
+  menu:
+    alternative_select_labels: [A, S, D, F, G, H, J, K, L]
+    alternative_select_keys: ASDFGHJKL
+    page_size: 9
+  style:
+    inline_preedit: false
