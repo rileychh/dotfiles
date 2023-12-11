@@ -1,0 +1,49 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+"" Suggested options
+set scrolloff=5
+set incsearch
+map Q gq
+
+"" Plugins https://jb.gg/ideavim-plugins
+Plug 'machakann/vim-highlightedyank'
+Plug "tpope/vim-surround"
+Plug "tpope/vim-commentary"
+Plug 'preservim/nerdtree'
+
+"" Plugin settings
+nnoremap <Leader>e :NERDTree<CR>
+
+"" IdeaVim settings
+sethandler n:vim i:ide
+set ideamarks
+set ideajoin
+set clipboard^=ideaput
+
+"" Vim settings
+let mapleader=" "
+set ignorecase
+set smartcase
+
+nnoremap 'ciw' ':let @/=expand("<cword>")<CR>cgn'
+
+sethandler <C--> a:vim
+sethandler <C-=> a:vim
+nnoremap <C-\> :action SplitVertically<CR>
+nnoremap <C--> :action SplitHorizontally<CR>
+nnoremap <C-=> :action Unsplit<CR>
+nnoremap <C-m> :action MoveEditorToOppositeTabGroup<CR>
+
+sethandler <C-j> a:vim
+sethandler <C-k> a:vim
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
+sethandler <S-TAB> a:vim
+nnoremap <TAB> :action NextTab<CR>
+nnoremap <S-TAB> :action PreviousTab<CR>
