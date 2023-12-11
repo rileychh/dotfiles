@@ -14,3 +14,12 @@
 	format = ssh
 [commit]
 	gpgSign = true
+[difftool]
+	prompt = true
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+	trustExitCode = false
+[core]
+	autocrlf = input
