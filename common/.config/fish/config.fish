@@ -26,7 +26,7 @@ fish_add_path /opt/flutter/bin
 
 # Disable history
 set -gx HISTFILE $HOME/.local/share/bash/history
-set -gx LESSHISTFILE "-"
+set -gx LESSHISTFILE -
 
 # Keep the home directory clean
 set -gx XDG_CONFIG_HOME $HOME/.config
