@@ -14,9 +14,15 @@ set -gx VISUAL nvim
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 
-# Flutter
+# Flutter and Android
 set -gx CHROME_EXECUTABLE /usr/bin/chromium
 set -gx PUB_CACHE $HOME/.cache/pub
+set -gx ANDROID_HOME $HOME/.local/share/android-sdk
+# fish_add_path $ANDROID_HOME/tools
+# fish_add_path $ANDROID_HOME/tools/bin
+# fish_add_path $ANDROID_HOME/platform-tools
+fish_add_path $ANDROID_HOME/cmdline-tools/latest/bin
+fish_add_path /opt/flutter/bin
 
 # Disable history
 set -gx HISTFILE $HOME/.local/share/bash/history
@@ -55,7 +61,4 @@ fish_add_path $HOME/.local/share/pnpm
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/cargo/bin
 fish_add_path $HOME/.pub-cache/bin
-fish_add_path /usr/lib/jvm/java-19-openjdk/bin/
-fish_add_path /opt/android-sdk/cmdline-tools/latest/bin
-fish_add_path /opt/flutter/bin
 set PATH node_modules/.bin $PATH
