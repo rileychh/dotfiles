@@ -6,11 +6,21 @@ read_only = " 🔒"
 format = "[$symbol $number ]($style)"
 
 [status]
-format = "[$status ]($style)"
 disabled = false
+format = "[$symbol $common_meaning$signal_name$maybe_int ]($style)"
+symbol = "[✖](bold red)"
+success_symbol = "[✔](dimmed bold green)" # Enabled until https://github.com/starship/starship/issues/3980 is solved
+map_symbol = true
+pipestatus = true
+pipestatus_separator = "[| ](dimmed)"
+pipestatus_format = "$pipestatus"
 
 [character]
 format = "$symbol  "
 success_symbol = "[➜](bold green)"
-error_symbol = "[✖](bold red)"
-vicmd_symbol = "[](green)"
+error_symbol = "[➜](bold red)"
+vimcmd_symbol = "[](green)"
+vimcmd_replace_one_symbol = "[](purple)"
+vimcmd_replace_symbol = "[](purple)"
+vimcmd_visual_symbol = "[](yellow)"
+
