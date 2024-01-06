@@ -7,16 +7,16 @@ format = "[$symbol $number ]($style)"
 
 [status]
 disabled = false
-format = "[$symbol $common_meaning$signal_name$maybe_int ]($style)"
+format = "[$symbol $common_meaning$signal_name$maybe_int]($style)"
 symbol = "[✖](bold red)"
 success_symbol = "[✔](dimmed bold green)" # Enabled until https://github.com/starship/starship/issues/3980 is solved
 map_symbol = true
 pipestatus = true
-pipestatus_separator = "[| ](dimmed)"
+pipestatus_separator = "[ | ](dimmed)"
 pipestatus_format = "$pipestatus"
 
 [character]
-format = "$symbol  "
+format = " $symbol  "
 success_symbol = "[➜](bold green)"
 error_symbol = "[➜](bold red)"
 vimcmd_symbol = "[](green)"
