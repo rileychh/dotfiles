@@ -9,26 +9,25 @@ set incsearch
 map Q gq
 
 "" Plugins https://jb.gg/ideavim-plugins
-Plug 'machakann/vim-highlightedyank'
+Plug "machakann/vim-highlightedyank"
 Plug "tpope/vim-surround"
 Plug "tpope/vim-commentary"
-Plug 'preservim/nerdtree'
-
-"" Plugin settings
-nnoremap <Leader>e :NERDTree<CR>
+Plug "preservim/nerdtree"
 
 "" IdeaVim settings
 sethandler n:vim i:ide
 set ideamarks
 set ideajoin
 set clipboard^=ideaput
+set visualbell " Silence
 
 "" Vim settings
 let mapleader=" "
 set ignorecase
 set smartcase
 
-nnoremap 'ciw' ':let @/=expand("<cword>")<CR>cgn'
+"" Plugin settings
+nnoremap <Leader>e :NERDTree<CR>
 
 sethandler <C--> a:vim
 sethandler <C-=> a:vim
@@ -40,9 +39,9 @@ nnoremap <C-m> :action MoveEditorToOppositeTabGroup<CR>
 sethandler <C-j> a:vim
 sethandler <C-k> a:vim
 nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 sethandler <S-TAB> a:vim
 nnoremap <TAB> :action NextTab<CR>
