@@ -59,6 +59,8 @@ abbr -a dc 'docker compose'
 abbr -a r ranger-cd
 abbr -a vi nvim
 abbr -a rm 'rm -i'
+abbr -a ll 'ls -l'
+abbr -a la 'ls -la'
 
 fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.local/bin
