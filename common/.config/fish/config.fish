@@ -48,14 +48,17 @@ abbr -a wget 'wget --hsts-file=$XDG_CACHE_HOME/wget-hsts'
 
 # Abbreviations
 abbr -a s systemctl
-abbr -a ss 'systemctl status'
+abbr -a si 'systemctl status'
 abbr -a se 'systemctl enable'
-abbr -a sen 'systemctl enable --now'
+abbr -a sd 'systemctl disable'
+abbr -a ss 'systemctl start'
+abbr -a st 'systemctl stop'
 abbr -a sr 'systemctl restart'
 abbr -a d docker
 abbr -a dc 'docker compose'
 abbr -a r ranger-cd
 abbr -a vi nvim
+abbr -a rm 'rm -i'
 
 fish_add_path $HOME/.local/share/pnpm
 fish_add_path $HOME/.local/bin
