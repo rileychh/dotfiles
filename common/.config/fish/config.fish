@@ -60,8 +60,9 @@ abbr -a r ranger-cd
 abbr -a vi nvim
 abbr -a rm 'rm -i'
 
-fish_add_path $HOME/.local/share/pnpm
+fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.local/bin
-fish_add_path $HOME/.local/share/cargo/bin
+fish_add_path $XDG_DATA_HOME/cargo/bin
 fish_add_path $HOME/.pub-cache/bin
+fish_add_path $XDG_DATA_HOME/go/bin
 set PATH node_modules/.bin $PATH
