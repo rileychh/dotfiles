@@ -60,6 +60,7 @@ abbr -a dc 'docker compose'
 abbr -a r ranger-cd
 abbr -a vi nvim
 abbr -a rm 'rm -i'
+abbr -a ls 'ls -a'
 abbr -a ll 'ls -l'
 abbr -a la 'ls -la'
 
