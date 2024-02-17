@@ -1,4 +1,3 @@
-# Defined in /tmp/fish.puuBrg/run.fish @ line 2
 function run
     set file $argv[1]
     set ext (string match --regex '\.[^.]*$' $file)
