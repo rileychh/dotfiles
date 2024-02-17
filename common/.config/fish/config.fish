@@ -10,14 +10,20 @@ set -gx MOZ_ENABLE_WAYLAND 1
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
+# Keep the home directory clean
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_CACHE_HOME $HOME/.cache
+set -gx XDG_DATA_HOME $HOME/.local/share
+
 # pnpm
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 
 # Flutter and Android
 set -gx CHROME_EXECUTABLE /usr/bin/chromium
-set -gx PUB_CACHE $HOME/.cache/pub
-set -gx ANDROID_HOME $HOME/.local/share/android-sdk
+set -gx PUB_CACHE $XDG_CACHE_HOME/pub
+set -gx FVM_HOME $XDG_DATA_HOME/fvm
+set -gx ANDROID_HOME $XDG_DATA_HOME/android-sdk
 # fish_add_path $ANDROID_HOME/tools
 # fish_add_path $ANDROID_HOME/tools/bin
 # fish_add_path $ANDROID_HOME/platform-tools
@@ -27,11 +33,6 @@ fish_add_path /opt/flutter/bin
 # Disable history
 set -gx HISTFILE $HOME/.local/share/bash/history
 set -gx LESSHISTFILE -
-
-# Keep the home directory clean
-set -gx XDG_CONFIG_HOME $HOME/.config
-set -gx XDG_CACHE_HOME $HOME/.cache
-set -gx XDG_DATA_HOME $HOME/.local/share
 
 set -gx CARGO_HOME $XDG_DATA_HOME/cargo
 set -gx CCACHE_CONFIGPATH $XDG_CONFIG_HOME/ccache.conf
@@ -66,5 +67,6 @@ fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.local/bin
 fish_add_path $XDG_DATA_HOME/cargo/bin
 fish_add_path $HOME/.pub-cache/bin
+fish_add_path $XDG_DATA_HOME/fvm/default/bin
 fish_add_path $XDG_DATA_HOME/go/bin
 set PATH node_modules/.bin $PATH
