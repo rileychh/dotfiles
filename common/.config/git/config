@@ -7,9 +7,7 @@
 [pull]
 	rebase = false
 [alias]
-	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch -f --env-filter \"if [[ \\\"$\\`echo $VAR\\`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
-[safe]
-	directory = /opt/flutter
+	s = status -sb
 [gpg]
 	format = ssh
 [commit]
@@ -23,3 +21,5 @@
 	trustExitCode = false
 [core]
 	autocrlf = input
+[rerere]
+	enabled = true
