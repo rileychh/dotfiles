@@ -1,0 +1,10 @@
+[Unit]
+Description=Remap %i using evremap
+
+[Service]
+WorkingDirectory=/
+ExecStart=bash -c "/usr/bin/evremap remap $HOME/.config/evremap/%i.toml -d 0"
+
+[Install]
+WantedBy=default.target
+
