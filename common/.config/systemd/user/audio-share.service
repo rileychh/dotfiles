@@ -1,8 +1,8 @@
 [Unit]
-Description=Audio Share Server
+Description=Audio share server
 
 [Service]
-ExecStart=/usr/bin/as-cmd -b 0.0.0.0 -e 56
+ExecStart=/usr/bin/as-cmd -b 0.0.0.0
 
 [Install]
 WantedBy=default.target
