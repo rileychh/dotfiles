@@ -1,7 +1,9 @@
 [Unit]
 Description=Audio share server
+After=sound.target
 
 [Service]
+ExecStartPre=/usr/bin/sleep 5
 ExecStart=/usr/bin/as-cmd -b 0.0.0.0
 
 [Install]
