@@ -29,6 +29,9 @@ set smartcase
 "" Plugin settings
 nnoremap <Leader>e :NERDTree<CR>
 
+"" IdeaVimExtension plugin
+:set keep-english-in-normal-and-restore-in-insert
+
 sethandler <C--> a:vim
 sethandler <C-=> a:vim
 nnoremap <C-\> :action SplitVertically<CR>
