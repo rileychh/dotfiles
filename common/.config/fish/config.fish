@@ -23,11 +23,9 @@ set -gx PATH "$PNPM_HOME" $PATH
 set -gx CHROME_EXECUTABLE /usr/bin/chromium
 set -gx PUB_CACHE $XDG_CACHE_HOME/pub
 set -gx FVM_CACHE_PATH $XDG_CACHE_HOME/fvm
-set -gx ANDROID_HOME $XDG_DATA_HOME/android-sdk
-# fish_add_path $ANDROID_HOME/tools
-# fish_add_path $ANDROID_HOME/tools/bin
-# fish_add_path $ANDROID_HOME/platform-tools
-fish_add_path $ANDROID_HOME/cmdline-tools/latest/bin
+fish_add_path $XDG_DATA_HOME/android-sdk/platform-tools
+fish_add_path $FVM_CACHE_PATH/default/bin
+fish_add_path $PUB_CACHE/bin
 
 # Disable history
 set -gx HISTFILE $HOME/.local/share/bash/history
@@ -74,7 +72,6 @@ abbr -a la 'ls -la'
 fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.local/bin
 fish_add_path $XDG_DATA_HOME/cargo/bin
-fish_add_path $XDG_CACHE_HOME/fvm/default/bin
-fish_add_path $XDG_CACHE_HOME/pub/bin
 fish_add_path $XDG_DATA_HOME/go/bin
+fish_add_path $XDG_DATA_HOME/JetBrains/Toolbox/scripts
 set PATH node_modules/.bin $PATH
