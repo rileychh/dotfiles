@@ -5,7 +5,7 @@
 [init]
 	defaultBranch = main
 [pull]
-	rebase = false
+	rebase = true
 [alias]
 	s = status -sb
 [gpg]
