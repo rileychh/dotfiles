@@ -61,6 +61,7 @@ abbr -a stu 'systemctl --user stop'
 abbr -a sru 'systemctl --user restart'
 abbr -a slu 'systemctl --user daemon-reload'
 abbr -a d docker
+abbr -a dp 'docker ps --format \'table {{.Names}}\\t{{.Status}}\''
 abbr -a dc 'docker compose'
 abbr -a r ranger-cd
 abbr -a vi nvim
@@ -75,3 +76,7 @@ fish_add_path $XDG_DATA_HOME/cargo/bin
 fish_add_path $XDG_DATA_HOME/go/bin
 fish_add_path $XDG_DATA_HOME/JetBrains/Toolbox/scripts
 set PATH node_modules/.bin $PATH
+
+if set -q SSH_CONNECTION
+  cd /srv/
+end
