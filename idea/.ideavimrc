@@ -18,7 +18,7 @@ Plug "preservim/nerdtree"
 sethandler n:vim i:ide
 set ideamarks
 set ideajoin
-set clipboard^=ideaput
+set clipboard^=unnamedplus
 set visualbell " Silence
 
 "" Vim settings
