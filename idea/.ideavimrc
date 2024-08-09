@@ -49,3 +49,6 @@ nnoremap <C-l> <C-w>l
 sethandler <S-TAB> a:vim
 nnoremap <TAB> :action NextTab<CR>
 nnoremap <S-TAB> :action PreviousTab<CR>
+
+" Format with ESLint by pressing =
+nnoremap = :action Javascript.Linters.EsLint.Fix<CR>
