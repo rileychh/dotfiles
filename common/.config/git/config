@@ -26,3 +26,5 @@
 [maintenance]
 	repo = /home/riley/nc/prj/npc/tat_flutter
 	repo = /home/riley/nc/prj/lightenform/web
+[push]
+	autoSetupRemote = true
