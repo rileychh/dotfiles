@@ -65,10 +65,12 @@ abbr -a dp 'docker ps --format \'table {{.Names}}\\t{{.Status}}\''
 abbr -a dc 'docker compose'
 abbr -a r ranger-cd
 abbr -a vi nvim
+abbr -a viconfig nvim ~/.config/fish/config.fish
 abbr -a rm 'rm -i'
 abbr -a ls 'ls -a'
 abbr -a ll 'ls -l'
 abbr -a la 'ls -la'
+abbr -a lg lazygit
 
 fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.local/bin
