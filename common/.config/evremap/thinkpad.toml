@@ -13,44 +13,44 @@ tap = ["KEY_ESC"]
 # ---------------
 
 # Map <M-h/j/k/l> to arrow keys
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_H"]
-output = ["KEY_LEFT"]
+# [[remap]]
+# input = ["KEY_LEFTALT", "KEY_H"]
+# output = ["KEY_LEFT"]
 
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_J"]
-output = ["KEY_DOWN"]
+# [[remap]]
+# input = ["KEY_LEFTALT", "KEY_J"]
+# output = ["KEY_DOWN"]
 
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_K"]
-output = ["KEY_UP"]
+# [[remap]]
+# input = ["KEY_LEFTALT", "KEY_K"]
+# output = ["KEY_UP"]
 
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_L"]
-output = ["KEY_RIGHT"]
+# [[remap]]
+# input = ["KEY_LEFTALT", "KEY_L"]
+# output = ["KEY_RIGHT"]
 
 # Map <M-H/J/K/L> to Home/PgDn/PgUp/End keys
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_H"]
-output = ["KEY_HOME"]
-
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_J"]
-output = ["KEY_PAGEDOWN"]
-
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_K"]
-output = ["KEY_PAGEUP"]
-
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_L"]
-output = ["KEY_END"]
+#[[remap]]
+#input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_H"]
+#output = ["KEY_HOME"]
+#
+#[[remap]]
+#input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_J"]
+#output = ["KEY_PAGEDOWN"]
+#
+#[[remap]]
+#input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_K"]
+#output = ["KEY_PAGEUP"]
+#
+#[[remap]]
+#input = ["KEY_LEFTALT", "KEY_LEFTSHIFT", "KEY_L"]
+#output = ["KEY_END"]
 
 # Map <M-w/b> to <C-right/left> (forward or back a word)
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_W"]
-output = ["KEY_LEFTCTRL", "KEY_RIGHT"]
-
-[[remap]]
-input = ["KEY_LEFTALT", "KEY_B"]
-output = ["KEY_LEFTCTRL", "KEY_LEFT"]
+#[[remap]]
+#input = ["KEY_LEFTALT", "KEY_W"]
+#output = ["KEY_LEFTCTRL", "KEY_RIGHT"]
+#
+#[[remap]]
+#input = ["KEY_LEFTALT", "KEY_B"]
+#output = ["KEY_LEFTCTRL", "KEY_LEFT"]
