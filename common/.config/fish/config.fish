@@ -79,6 +79,7 @@ fish_add_path $XDG_DATA_HOME/go/bin
 fish_add_path $XDG_DATA_HOME/JetBrains/Toolbox/scripts
 set PATH node_modules/.bin $PATH
 
-if set -q SSH_CONNECTION
+set servers everest k2
+if begin set -q SSH_CONNECTION; and contains (hostname) $servers; end
   cd /srv/
 end
