@@ -80,6 +80,7 @@ fish_add_path $XDG_DATA_HOME/JetBrains/Toolbox/scripts
 set PATH node_modules/.bin $PATH
 
 set servers everest k2
-if begin set -q SSH_CONNECTION; and contains (hostname) $servers; end
+set hostname_value (set -q hostname; and echo $hostname; or hostname; or cat /proc/sys/kernel/hostname)
+if begin set -q SSH_CONNECTION; and contains $hostname_value $servers; end
   cd /srv/
 end
