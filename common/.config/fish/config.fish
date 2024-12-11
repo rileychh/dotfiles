@@ -63,6 +63,7 @@ abbr -a slu 'systemctl --user daemon-reload'
 abbr -a d docker
 abbr -a dp 'docker ps --format \'table {{.Names}}\\t{{.Status}}\''
 abbr -a dc 'docker compose'
+abbr -a occ 'docker exec --user www-data -it nextcloud-aio-nextcloud php occ'
 abbr -a r ranger-cd
 abbr -a vi nvim
 abbr -a viconfig nvim ~/.config/fish/config.fish
