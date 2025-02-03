@@ -77,7 +77,6 @@ fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.local/bin
 fish_add_path $XDG_DATA_HOME/cargo/bin
 fish_add_path $XDG_DATA_HOME/go/bin
-fish_add_path $XDG_DATA_HOME/JetBrains/Toolbox/scripts
 set PATH node_modules/.bin $PATH
 
 set servers everest k2
