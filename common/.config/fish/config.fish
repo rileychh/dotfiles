@@ -74,6 +74,7 @@ abbr -a lg lazygit
 
 fish_add_path $PNPM_HOME
 fish_add_path $HOME/.local/bin
+fish_add_path $XDG_DATA_HOME/npm/bin
 fish_add_path $XDG_DATA_HOME/cargo/bin
 fish_add_path $XDG_DATA_HOME/go/bin
 set PATH node_modules/.bin $PATH
