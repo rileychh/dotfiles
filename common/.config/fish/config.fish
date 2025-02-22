@@ -5,7 +5,7 @@ fish_vi_key_bindings
 starship init fish | source
 
 # Software preferences
-set -gx BROWSER firefox
+set -gx BROWSER zen-browser
 set -gx MOZ_ENABLE_WAYLAND 1
 set -gx EDITOR nvim
 set -gx VISUAL nvim
