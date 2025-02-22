@@ -17,7 +17,6 @@ set -gx XDG_DATA_HOME $HOME/.local/share
 
 # pnpm
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
-set -gx PATH "$PNPM_HOME" $PATH
 
 # Flutter and Android
 set -gx CHROME_EXECUTABLE /usr/bin/chromium
@@ -73,7 +72,7 @@ abbr -a ll 'ls -l'
 abbr -a la 'ls -la'
 abbr -a lg lazygit
 
-fish_add_path $XDG_DATA_HOME/pnpm
+fish_add_path $PNPM_HOME
 fish_add_path $HOME/.local/bin
 fish_add_path $XDG_DATA_HOME/cargo/bin
 fish_add_path $XDG_DATA_HOME/go/bin
