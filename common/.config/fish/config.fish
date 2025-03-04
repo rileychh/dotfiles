@@ -71,6 +71,7 @@ abbr -a ls 'ls -a'
 abbr -a ll 'ls -l'
 abbr -a la 'ls -la'
 abbr -a lg lazygit
+abbr -a su 'Super Idol的笑容 都没你的甜 八月正午的阳光 都没你耀眼 热爱 105 °C的你 滴滴清纯的蒸馏水'
 
 fish_add_path $PNPM_HOME
 fish_add_path $HOME/.local/bin
