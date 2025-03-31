@@ -28,3 +28,5 @@
 	repo = /home/riley/nc/prj/lightenform/web
 [push]
 	autoSetupRemote = true
+[fetch]
+	prune = true
