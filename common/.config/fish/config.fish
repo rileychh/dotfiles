@@ -10,6 +10,10 @@ set -gx MOZ_ENABLE_WAYLAND 1
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
+# Hardware video acceleration
+set -gx LIBVA_DRIVER_NAME radeonsi
+set -gx VDPAU_DRIVER radeonsi
+
 # Keep the home directory clean
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_CACHE_HOME $HOME/.cache
