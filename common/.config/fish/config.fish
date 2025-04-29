@@ -49,14 +49,14 @@ set -gx GRADLE_USER_HOME $XDG_DATA_HOME/gradle
 abbr -a wget 'wget --hsts-file=$XDG_CACHE_HOME/wget-hsts'
 
 # Abbreviations
-abbr -a s systemctl
-abbr -a si 'systemctl status'
-abbr -a se 'systemctl enable'
-abbr -a sd 'systemctl disable'
-abbr -a ss 'systemctl start'
-abbr -a st 'systemctl stop'
-abbr -a sr 'systemctl restart'
-abbr -a sl 'systemctl daemon-reload'
+abbr -a s 'sudo systemctl'
+abbr -a si 'sudo systemctl status'
+abbr -a se 'sudo systemctl enable'
+abbr -a sd 'sudo systemctl disable'
+abbr -a ss 'sudo systemctl start'
+abbr -a st 'sudo systemctl stop'
+abbr -a sr 'sudo systemctl restart'
+abbr -a sl 'sudo systemctl daemon-reload'
 abbr -a siu 'systemctl --user status'
 abbr -a seu 'systemctl --user enable'
 abbr -a sdu 'systemctl --user disable'
