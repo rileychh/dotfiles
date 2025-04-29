@@ -11,5 +11,5 @@ function ipp
         echo
         echo "NEIGHBOURS:"
         ip -c -br n
-    end | less -R
+    end | less --raw-control-chars --quit-if-one-screen --chop-long-lines
 end
