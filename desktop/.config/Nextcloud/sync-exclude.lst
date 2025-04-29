@@ -1,0 +1,12 @@
+maintenance.lock
+build
+.output
+dist
+.git/packed-refs
+]node_modules
+].next
+].nuxt
+]__pycache__
+].venv
+].fvm
+].dart_tool
