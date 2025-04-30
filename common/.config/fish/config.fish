@@ -9,6 +9,7 @@ set -gx BROWSER zen-browser
 set -gx MOZ_ENABLE_WAYLAND 1
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+set -gx DIFFPROG 'nvim -d'
 
 # Hardware video acceleration
 set -gx LIBVA_DRIVER_NAME radeonsi
