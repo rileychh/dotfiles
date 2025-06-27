@@ -20,9 +20,6 @@ function spotify-open
     # Extract the resource path from open.spotify.com URLs
     set spotify_uri (echo $canonical_url | sed -E 's|https?://open\.spotify\.com/([^?]+).*|spotify://\1|')
 
-    # Replace forward slashes with colons for Spotify URI format
-    set spotify_uri (echo $spotify_uri | sed 's|/|:|g')
-
     echo "Opening: $spotify_uri"
     xdg-open "$spotify_uri"
 end
