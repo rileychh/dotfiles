@@ -1,1 +1,1 @@
-Write a single-line commit message for the staged changes. Copy the message to the clipboard by using `wl-copy <text-to-copy>`. Do NOT use pipe or redirection.
+Write a single-line commit message for the staged changes. Ignore previous chat history and view changes using Git commands. Write the message to a temporary file and open it in VS Code with `code`.
