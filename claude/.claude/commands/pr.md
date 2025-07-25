@@ -1,0 +1,1 @@
+Write a short and consise PR message for the current branch. The message should include a short summary of changes. Ignore previous chat history and view changes using `git` and `gh` commands. Write the message to a temporary file and open it in VS Code with `code`.
