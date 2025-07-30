@@ -51,3 +51,5 @@ dist
 ].fvm
 ].dart_tool
 ].ruff_cache
+].vitepress/cache
+].vitepress/temp
