@@ -1,1 +1,1 @@
-Write a single-line commit message for the staged changes. Ignore previous chat history and view changes using Git commands. Write the message to a temporary file and open it in VS Code with `code`.
+Write a single-line commit message for the staged changes. Always view current changes using Git commands. write the message to `/tmp/commit-message.txt` and open it in VS Code with `code`. Always read the file before writing the message and omit trailing newlines.
