@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "/tmp"
+    ],
+    "allow": [
+      "Edit(//tmp/commit-message.txt)",
+      "Edit(//tmp/pr-comment.txt)",
+      "Bash(code:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh act:*)",
+      "Bash(git add:*)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
