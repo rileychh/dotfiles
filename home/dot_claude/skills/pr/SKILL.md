@@ -22,6 +22,7 @@ Write a PR message:
 - Check for project contributing guidelines (CLAUDE.md, CONTRIBUTING.md) and follow any PR conventions
 - Title in first line without any heading
 - Description in subsequent lines
-- Copy the message to clipboard with `echo -n "<message>" | pbcopy`
-- Run: `gh pr create --title "<title>" --body "<body>"`
+- Copy the message to clipboard with `echo -n "<message>" | pbcopy` as a separate Bash call
+- Run `gh pr create --title "<title>" --body "<body>"` as a separate Bash call
+- These must be separate Bash tool calls, never combined with `&&` or `;`
 - Do not ask for confirmation — create the PR directly
