@@ -1,0 +1,7 @@
+{{- $osID := .chezmoi.os -}}
+{{- if (and (eq .chezmoi.os "linux") (hasKey .chezmoi.osRelease "id")) -}}
+{{-   $osID = printf "linux-%s" .chezmoi.osRelease.id -}}
+{{- end -}}
+
+[data]
+    osID = {{ $osID | quote }}

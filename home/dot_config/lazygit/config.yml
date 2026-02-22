@@ -1,0 +1,7 @@
+gui:
+  nerdFontsVersion: '3'
+os:
+  editPreset: 'vscode'
+notARepository: 'skip'
+git:
+  overrideGpg: true

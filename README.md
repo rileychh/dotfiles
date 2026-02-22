@@ -4,25 +4,21 @@ This repository contains my personal dotfiles - configuration files for various 
 
 ## Management
 
-These dotfiles are managed using [GNU Stow](https://www.gnu.org/software/stow/), a symlink farm manager. This makes it easy to deploy configurations across different systems while keeping everything version controlled.
+These dotfiles are managed using [chezmoi](https://www.chezmoi.io/). OS-specific files are handled via `.chezmoiignore` — no heavy templating needed.
 
 ## Environments
 
 These dotfiles are primarily used across my various systems:
 
-- **Desktop/Workstation:** Arch Linux
-- **Servers:** Rocky Linux 9
-
-Some configurations may be specific to these distributions, but most should work on any Linux/Unix-like system with the appropriate software installed.
+- **Primary:** macOS
+- **Servers:** Rocky Linux 8/9
+- **Archived:** Arch Linux (see `stow-archive` branch)
 
 ## Usage
 
-To use these configurations:
-
-1. Clone this repository to your home directory
-2. Install GNU Stow (`sudo pacman -S stow` or `paru -S stow` on Arch Linux, `sudo dnf install stow` on Fedora/RHEL)
-3. Navigate to this directory
-4. Run `stow <package>` for each configuration set you want to use
+```sh
+chezmoi init --apply https://github.com/rileychh/dotfiles.git
+```
 
 ## License
 

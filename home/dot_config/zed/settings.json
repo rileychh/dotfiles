@@ -1,0 +1,48 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "ssh_connections": [
+    {
+      "host": "everest",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/srv"
+          ]
+        }
+      ]
+    }
+  ],
+  "terminal": {
+    "shell": {
+      "program": "fish",
+    },
+  },
+  "icon_theme": "Material Icon Theme",
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "cursor_blink": false,
+  "buffer_font_family": "FiraCode Nerd Font",
+  "vim_mode": false,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Macchiato",
+  },
+}

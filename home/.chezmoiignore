@@ -1,0 +1,16 @@
+README.md
+LICENSE
+Brewfile
+
+{{- if ne .chezmoi.os "darwin" }}
+.config/ghostty
+.config/karabiner
+.config/zed
+.config/fish/conf.d/homebrew.fish
+.config/fish/conf.d/macos.fish
+Library/
+{{- end }}
+
+{{- if ne .chezmoi.os "linux" }}
+.config/fish/conf.d/linux.fish
+{{- end }}

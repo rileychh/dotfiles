@@ -1,0 +1,62 @@
+Host pacific
+  HostName pacific.rileychh.dev
+  User root
+
+Host pacific.lan
+  HostName 192.168.69.69
+  User root
+
+Host pacific-win
+  HostName pacific.rileychh.dev
+  User Riley
+  Port 10122
+
+Host slate
+  HostName 192.168.69.1
+  User root
+  Port 65022
+  IdentityAgent none
+  IdentityFile ~/.ssh/slate_id_rsa
+  PubkeyAcceptedKeyTypes ssh-rsa
+  HostKeyAlgorithms ssh-rsa
+
+Host everest
+  HostName everest.rileychh.dev
+  User root
+
+Host everest.lan
+  HostName 192.168.31.31
+  User root
+
+Host k2
+  HostName k2.ntut.club
+  User riley
+
+Host toodi-mail
+  HostName 64.69.40.9
+  User root
+
+Host el-x5
+  HostName 140.124.72.28
+  User ee_a_13
+  HostKeyAlgorithms ssh-rsa
+
+Host el-x6
+  HostName 140.124.72.29
+  User ee_a_13
+  HostKeyAlgorithms ssh-rsa
+
+Host el-x7
+  HostName 140.124.72.42
+  User ee_a_13
+  HostKeyAlgorithms ssh-rsa
+
+Host el-sa
+  HostName 140.124.71.209
+  User t111360109
+  Port 3502
+
+Host jason
+  HostName 125.229.144.147
+  User riley
+  Port 2222
