@@ -9,7 +9,8 @@
       "Bash(dart format *)",
       "Bash(dart run build_runner build *)",
       "Bash(du *)",
-      "Bash(echo * | pbcopy)",
+      "Bash(echo *)",
+      "Bash(pbcopy)",
       "Bash(eza *)",
       "Bash(flutter analyze *)",
       "Bash(flutter pub *)",
@@ -56,6 +57,7 @@
       "Bash(pnpm add *)",
       "Bash(pnpm list *)",
       "Bash(pwd)",
+      "Bash(ruby -c *)",
       "Bash(sed *)",
       "Bash(sort *)",
       "Bash(test *)",
@@ -75,7 +77,6 @@
       "mcp__proxyman__get_ssl_proxying_list",
       "mcp__proxyman__get_proxy_status",
       "mcp__proxyman__toggle_recording"
-
     ],
     "defaultMode": "default"
   },
