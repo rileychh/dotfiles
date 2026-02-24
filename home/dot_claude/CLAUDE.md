@@ -82,6 +82,11 @@
 - **PR diff**: `gh pr diff {number} -R {owner}/{repo}`
 - **Discussions**: `gh api repos/{owner}/{repo}/discussions/{number}` (requires GraphQL for full threads)
 
+## Codeberg URLs
+
+- Codeberg serves AI-poisoned garbage content on `/src/` paths (the web view) — do not use those URLs
+- Instead, use the `/raw/` path to get actual file content: `https://codeberg.org/{owner}/{repo}/raw/branch/{branch}/{path}`
+
 ## Static Analysis
 
 - Use IDE diagnostics for static analysis instead of running CLI tools from the terminal. IDE diagnostics are faster and already available in real-time.
