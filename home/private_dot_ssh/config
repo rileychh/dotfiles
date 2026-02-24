@@ -6,10 +6,19 @@ Host pacific.lan
   HostName 192.168.69.69
   User root
 
+Host pacific-ssh-proxy
+  HostName pacific.rileychh.dev
+  User ssh-proxy
+
 Host pacific-win
   HostName pacific.rileychh.dev
   User Riley
   Port 10122
+
+Host sherry-vm
+  HostName 192.168.69.105
+  User sherry
+  ProxyJump pacific-ssh-proxy
 
 Host slate
   HostName 192.168.69.1
