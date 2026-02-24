@@ -91,6 +91,11 @@
 
 - Use IDE diagnostics for static analysis instead of running CLI tools from the terminal. IDE diagnostics are faster and already available in real-time.
 
+## Bash Commands
+
+- Do not chain multiple commands with `;`, `&&`, or `||` in a single Bash call — permission is matched against the entire command string, so chaining triggers a permission prompt even if each command is individually allowed
+- Instead, use separate parallel Bash tool calls for independent commands, or sequential calls when order matters
+
 ## CLI Tools
 
 - `jq` - JSON processor for parsing and transforming JSON
