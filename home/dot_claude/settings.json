@@ -83,7 +83,12 @@
       "mcp__proxyman__filter_flows",
       "mcp__proxyman__get_ssl_proxying_list",
       "mcp__proxyman__get_proxy_status",
-      "mcp__proxyman__toggle_recording"
+      "mcp__proxyman__toggle_recording",
+      "Read(/opt/homebrew)",
+      "Read(~/.gradle/caches)",
+      "Read(~/.cache/npm)",
+      "Read(~/.local/share/pnpm)",
+      "Read(~/.pub-cache)"
     ],
     "defaultMode": "default"
   },
