@@ -3,6 +3,17 @@
     "CLAUDE_CODE_STREAMING_TEXT": "true"
   },
   "permissions": {
+    "ask": [
+      "Bash(gh api --method POST *)",
+      "Bash(gh api --method PUT *)",
+      "Bash(gh api --method PATCH *)",
+      "Bash(gh api --method DELETE *)",
+      "Bash(gh api -X POST *)",
+      "Bash(gh api -X PUT *)",
+      "Bash(gh api -X PATCH *)",
+      "Bash(gh api -X DELETE *)",
+      "Bash(gh api graphql *)"
+    ],
     "allow": [
       "Bash(* --help *)",
       "Bash(* --version)",
@@ -18,10 +29,7 @@
       "Bash(flutter analyze *)",
       "Bash(flutter pub *)",
       "Bash(flutter test *)",
-      "Bash(gh api --method GET *)",
-      "Bash(gh api -H *Accept*raw* repos/*/contents/*)",
-      "Bash(gh api repos/*/discussions/*)",
-      "Bash(gh api repos/*/pulls/*/comments)",
+      "Bash(gh api *)",
       "Bash(gh issue list *)",
       "Bash(gh issue view *)",
       "Bash(gh pr checks *)",
