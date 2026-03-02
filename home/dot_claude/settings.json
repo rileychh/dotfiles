@@ -92,6 +92,12 @@
       "mcp__proxyman__get_ssl_proxying_list",
       "mcp__proxyman__get_proxy_status",
       "mcp__proxyman__toggle_recording",
+      "mcp__firebase__firebase_update_environment",
+      "mcp__firebase__firebase_list_apps",
+      "mcp__firebase__firebase_get_environment",
+      "mcp__firebase__crashlytics_get_report",
+      "mcp__firebase__crashlytics_get_issue",
+      "mcp__firebase__crashlytics_list_events",
       "Read(/opt/homebrew)",
       "Read(~/.gradle/caches)",
       "Read(~/.cache/npm)",
@@ -109,6 +115,7 @@
     "figma@claude-plugins-official": true,
     "document-skills@anthropic-agent-skills": true
   },
+  "extraKnownMarketplaces": {},
   "alwaysThinkingEnabled": true,
   "skipDangerousModePermissionPrompt": true,
   "effortLevel": "medium"
