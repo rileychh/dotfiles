@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(git status*), Bash(git diff*), Bash(git log*), Bash(echo*)
+allowed-tools: Bash(git status*), Bash(git diff*), Bash(git log*), Read
 argument-hint: [type] [scope]
 description: Write a Conventional Commits style commit message
 ---
@@ -27,8 +27,6 @@ Write a commit message and run `git commit`:
 - Scope: if the scope argument above is non-empty and not "none", include it as `(scope)`; otherwise omit the scope entirely
 - Check for project contributing guidelines (CLAUDE.md, CONTRIBUTING.md) and follow any commit message conventions
 - Format: `type: description` or `type(scope): description`
-- Copy the message to clipboard with `echo -n "<message>" | pbcopy` as a separate Bash call
-- Run `git commit -m "<message>"` as a separate Bash call
-- These must be separate Bash tool calls, never combined with `&&` or `;`
+- Run `git commit -m "<message>"`
 - Do not ask for confirmation — commit directly
 - Do not include Co-Authored-By lines
