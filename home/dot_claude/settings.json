@@ -102,7 +102,11 @@
       "Read(~/.gradle/caches)",
       "Read(~/.cache/npm)",
       "Read(~/.local/share/pnpm)",
-      "Read(~/.pub-cache)"
+      "Read(~/.pub-cache)",
+      "Skill(check)",
+      "Skill(commit)",
+      "Skill(pr)",
+      "Skill(gh-pr-review)"
     ],
     "defaultMode": "default"
   },
