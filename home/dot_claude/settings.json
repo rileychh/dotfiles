@@ -41,6 +41,7 @@
       "Bash(gh pr-review threads resolve *)",
       "Bash(gh release list *)",
       "Bash(gh repo view *)",
+      "Bash(gh search *)",
       "Bash(gh run *)",
       "Bash(git -C * branch *)",
       "Bash(git -C * diff *)",
