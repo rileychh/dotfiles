@@ -96,6 +96,7 @@
 - Do not chain multiple commands with `;`, `&&`, or `||` in a single Bash call — permission is matched against the entire command string, so chaining triggers a permission prompt even if each command is individually allowed
 - Do not use `$()` command substitution inside Bash calls — it also triggers a permission prompt; run the inner command in a separate Bash call first, then use the result in the next call
 - Use separate parallel Bash tool calls for independent commands, or sequential calls when order matters
+- Always quote paths containing spaces with quotes instead of backslash-escaping — `"Applications/Google Chrome.app"` instead of `Applications/Google\ Chrome.app`.
 
 ## CLI Tools
 
