@@ -1,7 +1,4 @@
 {
-  "env": {
-    "CLAUDE_CODE_STREAMING_TEXT": "true"
-  },
   "permissions": {
     "ask": [
       "Bash(gh api --method POST *)",
