@@ -11,9 +11,9 @@ Host pacific-ssh-proxy
   User ssh-proxy
 
 Host pacific-win
-  HostName pacific.rileychh.dev
+  HostName 192.168.69.101
   User Riley
-  Port 10122
+  ProxyJump pacific-ssh-proxy
 
 Host sherry-vm
   HostName 192.168.69.105
