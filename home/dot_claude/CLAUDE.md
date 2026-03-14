@@ -3,12 +3,6 @@
 - Read-only git commands (diff, status, log, branch, show, etc.) can be run freely
 - State-changing git commands (add, commit, push, rebase, reset, branch -D, etc.) require explicit user instruction
 
-## Commit and PR Messages
-
-- Do not include self-attribution or Co-Authored-By lines
-- Do not mention that the changes were made by Claude or AI assistance
-- Write commit messages from the perspective of the developer/user
-
 ## Testing and Debugging
 
 - For web projects, use Chrome browser automation tools to test and debug rendered pages

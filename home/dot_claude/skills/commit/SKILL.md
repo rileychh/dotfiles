@@ -29,4 +29,3 @@ Write a commit message and run `git commit`:
 - Format: `type: description` or `type(scope): description`
 - Run `git commit -m "<message>"`
 - Do not ask for confirmation — commit directly
-- Do not include Co-Authored-By lines

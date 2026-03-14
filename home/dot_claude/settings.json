@@ -124,5 +124,9 @@
   "extraKnownMarketplaces": {},
   "alwaysThinkingEnabled": true,
   "skipDangerousModePermissionPrompt": true,
-  "effortLevel": "medium"
+  "effortLevel": "medium",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
 }
