@@ -53,3 +53,4 @@ dist
 ].ruff_cache
 ].vitepress/cache
 ].vitepress/temp
+].claude/worktrees
