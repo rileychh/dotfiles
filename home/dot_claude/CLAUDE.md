@@ -92,6 +92,14 @@
 - Use separate parallel Bash tool calls for independent commands, or sequential calls when order matters
 - Always quote paths containing spaces with quotes instead of backslash-escaping — `"Applications/Google Chrome.app"` instead of `Applications/Google\ Chrome.app`.
 
+## Secrets and `.env` files
+
+- To use a secret in a command, source `.env` inline — never paste the token into the command string:
+  ```bash
+  source .env && curl "https://api.example.com/bot${TOKEN}/getMe"
+  ```
+- To edit `.env`, use the Edit tool after a Read.
+
 ## CLI Tools
 
 - `jq` - JSON processor for parsing and transforming JSON
