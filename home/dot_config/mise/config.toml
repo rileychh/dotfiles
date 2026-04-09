@@ -3,3 +3,6 @@ bun = "latest"
 go = "latest"
 java = "temurin-21"
 node = "24"
+
+[settings.ruby]
+compile = false
