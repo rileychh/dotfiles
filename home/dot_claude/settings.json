@@ -42,6 +42,7 @@
       "Bash(dart format *)",
       "Bash(dart run build_runner build *)",
       "Bash(du *)",
+      "Bash(file *)",
       "Bash(echo *)",
       "Bash(pbcopy)",
       "Bash(eza *)",
