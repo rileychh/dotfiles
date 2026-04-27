@@ -1,5 +1,8 @@
 tap "adembc/tap"
+tap "bwya77/tap"
+tap "charmbracelet/tap"
 tap "leoafarias/fvm"
+tap "rileychh/tap", "git@github.com:rileychh/homebrew-tap.git"
 tap "steipete/tap"
 # Run your GitHub Actions locally
 brew "act"
@@ -15,6 +18,10 @@ brew "cairo"
 brew "cbonsai"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -25,10 +32,16 @@ brew "fd"
 brew "ffmpeg"
 # GitHub command-line tool
 brew "gh"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
 # Utils for conversion of cap/pcap/pcapng WiFi dump files
 brew "hcxtools"
 # Improved top (interactive process viewer)
 brew "htop"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # CLI wrapper for basic network utilities on macOS - ip command
@@ -79,18 +92,36 @@ brew "tcptraceroute"
 brew "trash"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Markup-based typesetting system
+brew "typst"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Internet file retriever
 brew "wget"
+# Port of OpenAI's Whisper model in C/C++
+brew "whisper-cpp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # A simple terminal UI for managing SSH connections.  
 brew "adembc/tap/lazyssh"
+# Generate images of code and terminal output.
+brew "charmbracelet/tap/freeze"
+# Claude Code statusline renderer with Nerd Font icons and OSC 8 hyperlinks
+brew "rileychh/tap/cc-statusline"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # Free app that makes your Internet safer
 cask "cloudflare-warp"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Control and anchor the macOS Dock programmatically
+cask "bwya77/tap/dockanchor"
+# Menu bar app that detects busy-loop processes and offers to kill them
+cask "rileychh/tap/spin-doctor"
+# Menu bar manager
+cask "thaw"
 cask "transmission-remote-gui"
