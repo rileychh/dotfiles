@@ -7,6 +7,7 @@
     "allow": [
       "Bash(* --help *)",
       "Bash(* --version)",
+      "Bash(awk *)",
       "Bash(cat *)",
       "Bash(code *)",
       "Bash(dart analyze *)",
@@ -18,6 +19,7 @@
       "Bash(eza *)",
       "Bash(ffprobe *)",
       "Bash(file *)",
+      "Bash(find *)",
       "Bash(flutter analyze *)",
       "Bash(flutter build *)",
       "Bash(flutter pub *)",
@@ -137,6 +139,8 @@
       "Skill(commit)",
       "Skill(gh-pr-review)",
       "Skill(pr)",
+      "Skill(pr-deep-review)",
+      "Skill(schedule)",
       "WebFetch",
       "WebSearch",
       "mcp__Claude_in_Chrome",
@@ -160,6 +164,10 @@
       "mcp__proxyman__toggle_recording"
     ],
     "ask": [
+      "Bash(find *-exec*)",
+      "Bash(find *-execdir*)",
+      "Bash(find *-delete*)",
+      "Bash(find *-fprint*)",
       "Bash(gh api * --field *)",
       "Bash(gh api * --method delete *)",
       "Bash(gh api * --method patch *)",
@@ -199,8 +207,8 @@
   },
   "enabledPlugins": {
     "context7@claude-plugins-official": true,
-    "figma@claude-plugins-official": true,
-    "document-skills@anthropic-agent-skills": true,
+    "figma@claude-plugins-official": false,
+    "document-skills@anthropic-agent-skills": false,
     "gopls-lsp@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
@@ -229,5 +237,6 @@
     }
   },
   "skipDangerousModePermissionPrompt": true,
-  "terminalProgressBarEnabled": false
+  "terminalProgressBarEnabled": false,
+  "skipAutoPermissionPrompt": true
 }
