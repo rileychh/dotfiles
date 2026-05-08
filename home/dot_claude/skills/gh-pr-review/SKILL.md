@@ -49,6 +49,24 @@ gh pr-review review --add-comment [<pr-number>] --review-id <PRR_...> --path <fi
 gh pr-review review --submit [<pr-number>] --review-id <PRR_...> --event <APPROVE|REQUEST_CHANGES|COMMENT> --body "summary"
 ```
 
+### Batch replies and inline comments under one notification
+
+`comments reply` accepts `--review-id` to attach the reply to a pending review instead of posting it immediately. Combine with `review --add-comment` to gather thread replies and new inline comments under one review, then submit once — reviewers get a single notification instead of one per comment.
+
+```sh
+# Start a pending review (capture review-id from the output)
+gh pr-review review --start [<pr-number>]
+
+# Reply to existing threads (attach to pending review)
+gh pr-review comments reply [<pr-number>] --review-id <PRR_...> --thread-id <PRRT_...> --body "..."
+
+# Add new inline comments at code locations (attach to pending review)
+gh pr-review review --add-comment [<pr-number>] --review-id <PRR_...> --path <file> --line <num> --body "..."
+
+# Submit (sends one notification covering all replies/comments above)
+gh pr-review review --submit [<pr-number>] --review-id <PRR_...> --event COMMENT --body ""
+```
+
 ## Output
 
 All commands return structured JSON. IDs use GraphQL format: `PRR_...` (reviews), `PRRT_...` (threads), `PRRC_...` (comments with `--include-comment-node-id`). Thread replies sorted by `created_at` ascending. Empty arrays when no data matches filters.
