@@ -135,12 +135,14 @@
       "Bash(which *)",
       "Bash(xxd *)",
       "Read",
+      "Skill(android-e2e)",
       "Skill(check)",
       "Skill(commit)",
       "Skill(gh-pr-review)",
       "Skill(pr)",
       "Skill(pr-deep-review)",
       "Skill(schedule)",
+      "Skill(skill-creator:skill-creator)",
       "WebFetch",
       "WebSearch",
       "mcp__Claude_in_Chrome",
@@ -382,7 +384,8 @@
     "typescript-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
     "codex@openai-codex": true,
-    "caveman@caveman": true
+    "caveman@caveman": true,
+    "skill-creator@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "claude-code-plugins": {
