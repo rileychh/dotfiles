@@ -228,7 +228,10 @@
       "Bash(git stash drop *)",
       "Bash(git stash drop)"
     ],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": [
+      "/tmp"
+    ]
   },
   "hooks": {
     "SessionStart": [
@@ -435,7 +438,7 @@
     }
   },
   "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
   "terminalProgressBarEnabled": false,
-  "skipAutoPermissionPrompt": true,
-  "skipWorkflowUsageWarning": true
+  "skipAutoPermissionPrompt": true
 }
