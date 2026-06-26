@@ -154,6 +154,7 @@
       "Bash(jadx *)",
       "Bash(jq *)",
       "Bash(ls *)",
+      "Bash(lsof *)",
       "Bash(mise ls)",
       "Bash(pbcopy)",
       "Bash(pnpm add *)",
@@ -418,12 +419,13 @@
     "figma@claude-plugins-official": false,
     "document-skills@anthropic-agent-skills": false,
     "gopls-lsp@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": false,
     "typescript-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
     "codex@openai-codex": true,
-    "caveman@caveman": true,
-    "skill-creator@claude-plugins-official": true
+    "caveman@caveman": false,
+    "skill-creator@claude-plugins-official": true,
+    "ponytail@ponytail": true
   },
   "extraKnownMarketplaces": {
     "claude-code-plugins": {
@@ -443,10 +445,19 @@
         "source": "github",
         "repo": "JuliusBrussee/caveman"
       }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
     }
   },
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
+  "theme": "auto",
   "terminalProgressBarEnabled": false,
-  "skipAutoPermissionPrompt": true
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen"
 }
