@@ -410,22 +410,19 @@
       }
     ]
   },
+  "respondToBashCommands": false,
   "statusLine": {
     "type": "command",
     "command": "cc-statusline"
   },
   "enabledPlugins": {
     "context7@claude-plugins-official": true,
-    "figma@claude-plugins-official": false,
     "document-skills@anthropic-agent-skills": false,
     "gopls-lsp@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": false,
     "typescript-lsp@claude-plugins-official": true,
-    "swift-lsp@claude-plugins-official": true,
     "codex@openai-codex": true,
-    "caveman@caveman": false,
-    "skill-creator@claude-plugins-official": true,
-    "ponytail@ponytail": true
+    "skill-creator@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "claude-code-plugins": {
