@@ -1,0 +1,47 @@
+patch:
+  recognizer/patterns/reverse_lookup:
+  punctuator/half_shape:
+    # Make single-choice half-shape characters commit directly
+    '+': { commit: '+' }
+    '=': { commit: '=' }
+    '#': { commit: '#' }
+    '&': { commit: '&' }
+    '@': { commit: '@' }
+    '`': { commit: '`' }
+    '~': { commit: '~' }
+    "(": { commit: "（" }
+    ")": { commit: "）" }
+    # The rest are the defaults
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["%", "％", "°", "℃"]
+    "'": {pair: ["‘", "’"]}
+    "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+    ":": ["：", "；"]
+    "<": {commit: "，"}
+    ">": {commit: "。"}
+    "?": ["？", "／", "/", "÷"]
+    "[": ["「", "【", "《", "〔", "［"]
+    "\\": ["、", "\\", "＼"]
+    "]": ["」", "】", "》", "〕", "］"]
+    "^": {commit: "……"}
+    _: ["——", "－", "-"]
+    "{": ["『", "〖", "〈", "｛"]
+    "|": ["·", "|", "｜", "§", "¦"]
+    "}": ["』", "〗", "〉", "｝"]
+  menu:
+    alternative_select_labels: [A, S, D, F, G, H, J, K, L]
+    alternative_select_keys: ASDFGHJKL
+    page_size: 9
+  switches/@next:
+    name: emoji_suggestion
+    reset: 1
+    states: [ "🈚︎", "🈶️" ]
+  'engine/filters/@before 0':
+    simplifier@emoji_suggestion
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: none
+    inherit_comment: false
