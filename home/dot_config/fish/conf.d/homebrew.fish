@@ -4,6 +4,9 @@ fish_add_path /opt/homebrew/opt/libpq/bin
 
 set -gx HOMEBREW_NO_ENV_HINTS 1
 set -gx HOMEBREW_NO_ASK 1
+set -gx HOMEBREW_BUNDLE_DUMP_NO_VSCODE 1
+set -gx HOMEBREW_BUNDLE_DUMP_NO_GO 1
+set -gx HOMEBREW_BUNDLE_DUMP_NO_NPM 1
 
 # Homebrew shell completions
 if test -d (brew --prefix)"/share/fish/completions"

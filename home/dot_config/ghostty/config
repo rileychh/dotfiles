@@ -5,7 +5,7 @@ font-family = PingFang TC
 font-variation = wght=450
 font-size = 14
 
-command = /usr/local/bin/fish
+command = /opt/homebrew/bin/fish
 
 # term = xterm-256color
 shell-integration-features = sudo,ssh-terminfo,ssh-env

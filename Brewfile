@@ -1,6 +1,5 @@
-tap "adembc/tap", "https://github.com/Adembc/homebrew-tap"
 tap "charmbracelet/tap", trusted: true
-tap "rileychh/tap", "git@github.com:rileychh/homebrew-tap.git", trusted: true
+tap "rileychh/tap", trusted: true
 # Run your GitHub Actions locally
 brew "act"
 # Record and share terminal sessions
@@ -33,6 +32,8 @@ brew "jpeg-xl"
 brew "whisper-cpp"
 # Play, record, convert, and stream many audio and video codecs
 brew "ffmpeg-full"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # GitHub command-line tool
 brew "gh"
 # Quickly rewrite git repository history
@@ -83,6 +84,8 @@ brew "pandoc"
 brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Utility that provides fast incremental file transfer
+brew "rsync"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # SMART hard drive monitoring
@@ -111,31 +114,59 @@ brew "watch"
 brew "wget"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# A simple terminal UI for managing SSH connections.  
-brew "adembc/tap/lazyssh", trusted: true
-# Generate images of code and terminal output.
-brew "charmbracelet/tap/freeze"
 # Claude Code statusline renderer with Nerd Font icons and OSC 8 hyperlinks
 brew "rileychh/tap/cc-statusline"
+# Stand alone ad blocker
+cask "adguard"
+# Menu bar tool to limit maximum charging percentage
+cask "aldente"
+# Tools for building Android applications
+cask "android-studio"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
+# Screen capturing tool
+cask "cleanshot"
 # Free app that makes your Internet safer
 cask "cloudflare-warp"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Utility for customizing which browser to start
-cask "finicky"
+# Voice and text chat software
+cask "discord"
+cask "font-fira-code-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Free and open-source media player
+cask "iina"
+# File archiver
+cask "keka"
+# GameStream client
+cask "moonlight"
+# Smooths scrolling and set mouse scroll directions independently
+cask "mos"
+# Desktop sync client for Nextcloud software products
+cask "nextcloud"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Open source virtual/remote desktop application
 cask "rustdesk"
 # Menu bar app that detects busy-loop processes and offers to kill them
 cask "rileychh/tap/spin-doctor"
-# Menu bar manager
-cask "thaw"
+# Music streaming service
+cask "spotify"
+# System monitor for the menu bar
+cask "stats"
+# Messaging app with a focus on speed and security
+cask "telegram"
 cask "transmission-remote-gui"
-# Virtual machines UI using QEMU
-cask "utm"
+# Open-source code editor
+cask "visual-studio-code"
+# Gecko based web browser
+cask "zen@twilight"
 uv "asitop"
 uv "httpie"
 uv "ruff"
 uv "yt-dlp"
-npm "corepack"
