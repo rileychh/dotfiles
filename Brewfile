@@ -136,6 +136,8 @@ cask "cloudflare-warp"
 cask "codex"
 # Voice and text chat software
 cask "discord"
+# Utility for customizing which browser to start
+cask "finicky"
 cask "font-fira-code-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
