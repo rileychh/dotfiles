@@ -1,0 +1,12 @@
+{{- /* chezmoi:modify-template */ -}}
+{{ fromToml .chezmoi.stdin
+| setValueAtPath "sandbox_mode" "workspace-write"
+| setValueAtPath "approval_policy" "on-request"
+| setValueAtPath "approvals_reviewer" "auto_review"
+| setValueAtPath "sandbox_workspace_write.network_access" true
+| setValueAtPath "desktop.enabled-reasoning-efforts" (list "low" "medium" "high" "xhigh" "ultra" "max")
+| setValueAtPath "desktop.followUpQueueMode" "steer"
+| setValueAtPath "desktop.localeOverride" "en-US"
+| setValueAtPath "desktop.mac-menu-bar-enabled" false
+| setValueAtPath "desktop.show-context-window-usage" true
+| toToml }}
