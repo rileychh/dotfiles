@@ -73,7 +73,7 @@ brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
 # Create, run, and share large language models (LLMs)
-brew "ollama"
+brew "ollama", restart_service: :changed
 # Simplified-traditional Chinese conversion tool
 brew "opencc"
 # Open client for Cisco AnyConnect VPN
@@ -112,6 +112,8 @@ brew "uv"
 brew "watch"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Claude Code statusline renderer with Nerd Font icons and OSC 8 hyperlinks
@@ -136,6 +138,8 @@ cask "cloudflare-warp"
 cask "codex"
 # Voice and text chat software
 cask "discord"
+# Collaborative team software
+cask "figma"
 # Utility for customizing which browser to start
 cask "finicky"
 cask "font-fira-code-nerd-font"
@@ -153,6 +157,8 @@ cask "moonlight"
 cask "mos"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
+# HTTP debugging proxy
+cask "proxyman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Open source virtual/remote desktop application
@@ -165,9 +171,10 @@ cask "spotify"
 cask "stats"
 # Messaging app with a focus on speed and security
 cask "telegram"
-cask "transmission-remote-gui"
 # Open-source code editor
 cask "visual-studio-code"
+# Menu bar toolkit with keep-awake, system monitor and volume mixer
+cask "vorssaint"
 # Gecko based web browser
 cask "zen@twilight"
 uv "asitop"
