@@ -244,6 +244,8 @@
       "/tmp"
     ]
   },
+  "model": "claude-opus-5[1m]",
+  "disableClaudeAiConnectors": true,
   "respondToBashCommands": false,
   "statusLine": {
     "type": "command",
@@ -289,5 +291,6 @@
   "skipWorkflowUsageWarning": true,
   "theme": "auto",
   "terminalProgressBarEnabled": false,
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "effortLevel": "high"
 }
