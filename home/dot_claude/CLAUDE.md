@@ -1,3 +1,13 @@
+## Local Environment
+
+- Never run `find` or other recursive scans rooted at `~` — scope them to the relevant directory, or ask where the file is
+- Userland is BSD, not GNU: `cat -A`, `stat -c`, `date -d`, `grep -P` and bare `sed -i` all fail. `coreutils` is installed `g`-prefixed (`gcat`, `gdate`, `gstat`, `gsplit`); `gsed`/`ggrep`/`gfind` are not
+- The Bash tool runs zsh: an unquoted variable doesn't word-split (`v=$(cmd); for x in $v` iterates once) and `$PIPESTATUS` is empty. Use `$pipestatus`, `while IFS= read -r`, or `bash -c`
+- Docker is OrbStack, wired via `/usr/local/bin` symlinks plus `~/.docker/cli-plugins` (for `docker compose`)
+- `psql` is not on PATH (libpq is keg-only): `/opt/homebrew/opt/libpq/bin/psql`
+- `ffmpeg-full` is keg-only: `/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg`. The `ffmpeg` on PATH is Homebrew's slim build — no libass, so no `subtitles`/`ass`/`ocr` filters
+- Interactive shell is `/opt/homebrew/bin/fish`; login shell is `/bin/zsh`
+
 ## Testing and Debugging
 
 - For web projects, use Chrome browser automation tools to test and debug rendered pages
