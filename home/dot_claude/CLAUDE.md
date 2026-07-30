@@ -26,6 +26,7 @@
 
 - Do only the task asked. Don't add explanatory notes, editorial context, or "helpful" prose beyond what was requested.
 - When a fix is already applied in code, don't also document it in project-wide context like CLAUDE.md — the code and its comments are the record.
+- Chat deliberation must never leak into code. When we weigh a choice, the code reflects only the final decision — not the decision space. No comments justifying it over rejected alternatives, and no configurability, hooks, or hedges added solely to keep a discussed-but-unchosen option reachable.
 
 ## Code Comments
 
