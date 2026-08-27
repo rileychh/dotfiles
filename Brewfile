@@ -1,3 +1,5 @@
+tap "betterdiscord/tap"
+tap "can1357/tap"
 tap "charmbracelet/tap", trusted: true
 tap "rileychh/tap", trusted: true
 # Run your GitHub Actions locally
@@ -8,8 +10,6 @@ brew "asciinema"
 brew "biome"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
-# Vector graphics library with cross-device output support
-brew "cairo"
 # Console Bonsai is a bonsai tree generator, written in C using ncurses
 brew "cbonsai"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -26,12 +26,6 @@ brew "fastfetch"
 brew "fd"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
-# New file format for still image compression
-brew "jpeg-xl"
-# Port of OpenAI's Whisper model in C/C++
-brew "whisper-cpp"
-# Play, record, convert, and stream many audio and video codecs
-brew "ffmpeg-full"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # GitHub command-line tool
@@ -54,14 +48,6 @@ brew "iproute2mac"
 brew "jadx"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Library for encoding and decoding .avif files
-brew "libavif"
-# Portable library for network traffic capture
-brew "libpcap"
-# Postgres C API library
-brew "libpq"
-# YAML Parser
-brew "libyaml"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
 # Deep clean and optimize your Mac
@@ -96,6 +82,8 @@ brew "spicetify-cli"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # Traceroute implementation using TCP packets
 brew "tcptraceroute"
 # CLI tool that moves files or folder to the trash
@@ -116,6 +104,8 @@ brew "wget"
 brew "wireguard-tools"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Coding agent with the IDE wired in
+brew "can1357/tap/omp", trusted: true
 # Claude Code statusline renderer with Nerd Font icons and OSC 8 hyperlinks
 brew "rileychh/tap/cc-statusline"
 # Stand alone ad blocker
@@ -124,25 +114,28 @@ cask "adguard"
 cask "aldente"
 # Tools for building Android applications
 cask "android-studio"
+# A cross-platform CLI for managing BetterDiscord.
+cask "betterdiscord/tap/bdcli", trusted: true
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code"
-# Screen capturing tool
-cask "cleanshot"
+cask "claude-code@latest"
 # Free app that makes your Internet safer
 cask "cloudflare-warp"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Voice and text chat software
 cask "discord"
+# Voice and text chat software
+cask "discord@ptb"
 # Collaborative team software
 cask "figma"
 # Utility for customizing which browser to start
 cask "finicky"
 cask "font-fira-code-nerd-font"
+cask "font-noto-sans-cjk"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Chromium-based web browser
@@ -157,6 +150,10 @@ cask "moonlight"
 cask "mos"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
+# Local-first alternative to Logitech Options+ for HID++ devices
+cask "openlogi"
+# Replacement for Docker Desktop
+cask "orbstack"
 # HTTP debugging proxy
 cask "proxyman"
 # Control your tools with a few keystrokes
