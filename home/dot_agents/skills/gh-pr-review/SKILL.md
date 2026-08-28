@@ -14,8 +14,10 @@ When inside a git repo, `-R owner/repo` and PR number are inferred automatically
 ### View reviews and threads
 
 ```sh
-gh pr-review review view [<pr-number>] [--unresolved] [--not_outdated] [--reviewer <login>] [--states APPROVED|CHANGES_REQUESTED|COMMENTED|DISMISSED] [--tail <n>] [--include-comment-node-id]
+gh pr-review review view [<pr-number>] [--unresolved] [--not_outdated] [--reviewer <login>] [--states APPROVED|CHANGES_REQUESTED|COMMENTED|DISMISSED|PENDING] [--tail <n>] [--include-comment-node-id]
 ```
+
+Unfiltered views include pending reviews. Pending reviews omit `submitted_at` until submission.
 
 ### Reply to a thread
 
