@@ -1,0 +1,44 @@
+setupVersion: 2
+modelRoles:
+  default: openai-codex/gpt-5.6-sol:medium
+  smol: openai-codex/gpt-5.6-luna
+  slow: openai-codex/gpt-5.6-sol:xhigh
+  task: openai-codex/gpt-5.6-luna:high
+  advisor: openai-codex/gpt-5.6-luna:medium
+defaultThinkingLevel: auto
+browser:
+  headless: false
+display:
+  cacheMissMarker: true
+  shimmer: disabled
+symbolPreset: nerd
+theme:
+  dark: dark-monochrome
+statusLine:
+  separator: none
+  sessionAccent: false
+  transparent: true
+  compactThinkingLevel: true
+tui:
+  codexResetFireworks: true
+steeringMode: all
+providers:
+  autoThinkingMaxEffort: max
+hideThinkingBlock: true
+dev:
+  autoqaConsent: granted
+composer:
+  shape: rule
+extendedContext: false
+compaction:
+  methodOrder:
+    - snapcompact
+    - remote
+    - handoff
+    - shake
+    - soft
+edit:
+  mode: hashline
+task:
+  isolation:
+    mode: auto
