@@ -35,7 +35,12 @@
 - Use `gh` rather than WebFetch for GitHub URLs.
 - For file content, use `gh api -H "Accept: application/vnd.github.raw" 'repos/{owner}/{repo}/contents/{path}?ref={ref}'`.
 - Use `gh repo view` for repository READMEs, `gh issue view` for issues, `gh pr view` for pull requests, and `gh pr diff` for PR diffs; add `--comments` when comment context is needed.
-- Use the `gh-pr-review` skill for inline PR review threads. Use `gh api repos/{owner}/{repo}/discussions/{number}` for discussions and GraphQL when the full thread is required.
+- Prefer GitHub MCP for supported GitHub operations; use `gh api` only when MCP lacks the action. After addressing multiple comments from one PR review, batch the replies into a pending review via `gh api` because MCP replies send immediately.
+- Before creating an issue or pull request, inspect templates, conventions, and related items. Present the title, write only the body to the scratchpad, and submit the exact reviewed title and body only after explicit approval. For pull requests, also verify the work is committed and pushed, exclude unrelated changes, avoid duplicates, derive the correct base, and report the URL, head, and base.
+
+## Online Actions
+
+- Never push commits, post comments, submit reviews, resolve or unresolve threads, or perform any other online interaction as the user unless the user explicitly approves the action.
 
 ## Codeberg URLs
 

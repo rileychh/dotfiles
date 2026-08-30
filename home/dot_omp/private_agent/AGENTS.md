@@ -16,10 +16,16 @@
 # Version Control
 
 - When writing a commit message, follow the repository's existing commit-message conventions. Inspect recent commits when the convention is unclear.
+- When branch history, divergence, rebasing intent, or the correct push strategy is uncertain, stop and ask what to preserve before rebasing, resetting, merging, or force-pushing.
 
 # GitHub
 
-- Use the `gh-pr-review` skill only for review-thread operations unavailable through the standard GitHub tools, including replies, resolve/unresolve, pending inline comments, and review submission. Use `gh` directly only when no specialized operation exists.
+- Prefer GitHub MCP for supported GitHub operations; use `gh api` only when MCP lacks the action. After addressing multiple comments from one PR review, batch the replies into a pending review via `gh api` because MCP replies send immediately. Keep `pr://` and built-in tooling for reads, diffs, checkouts, and pushes.
+- Before creating an issue or pull request, inspect templates, conventions, and related items. Present the title, write only the body to `local://ISSUE.md` or `local://PR.md`, and submit the exact reviewed title and body only after explicit approval. For pull requests, also verify the work is committed and pushed, exclude unrelated changes, avoid duplicates, derive the correct base, and report the URL, head, and base.
+
+# Online Actions
+
+- Never push commits, post comments, submit reviews, resolve or unresolve threads, or perform any other online interaction as the user unless the user explicitly approves the action.
 
 # Codeberg URLs
 
