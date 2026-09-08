@@ -177,7 +177,7 @@ cask "visual-studio-code"
 # Menu bar toolkit with keep-awake, system monitor and volume mixer
 cask "vorssaint"
 # Gecko based web browser
-cask "zen@twilight"
+cask "zen"
 uv "asitop"
 uv "httpie"
 uv "ruff"

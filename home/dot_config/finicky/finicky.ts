@@ -1,7 +1,7 @@
 import type { FinickyConfig } from "/Applications/Finicky.app/Contents/Resources/finicky.d.ts";
 
 export default {
-  defaultBrowser: "Twilight",
+  defaultBrowser: "Zen",
   options: {
     checkForUpdates: false,
     hideIcon: true,
