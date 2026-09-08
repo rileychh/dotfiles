@@ -23,6 +23,8 @@ patch:
     ascii_mode: true
   app_options/dev.zed.Zed:
     ascii_mode: true
+  app_options/com.google.android.studio:
+    ascii_mode: true
 
 # 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
 # 系統默認色系 - native
