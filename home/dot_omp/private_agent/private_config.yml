@@ -24,6 +24,11 @@ tui:
 steeringMode: all
 providers:
   autoThinkingMaxEffort: max
+  webSearchOrder:
+    - perplexity
+    - codex
+    - anthropic
+    - gemini
 hideThinkingBlock: true
 dev:
   autoqaConsent: granted
@@ -37,8 +42,7 @@ compaction:
     - handoff
     - shake
     - soft
-edit:
-  mode: hashline
+  thresholdPercent: 95
 task:
   isolation:
     mode: auto
