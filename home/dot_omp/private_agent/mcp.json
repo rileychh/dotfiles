@@ -12,6 +12,43 @@
         "GITHUB_TOOLSETS": "pull_requests"
       },
       "enabled": true
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Authorization": "${CONTEXT7_API_KEY:-}"
+      },
+      "enabled": true
+    },
+    "figma": {
+      "type": "http",
+      "url": "http://127.0.0.1:3845/mcp",
+      "enabled": true
+    },
+    "proxyman": {
+      "type": "stdio",
+      "command": "/Applications/Proxyman.app/Contents/MacOS/mcp-server",
+      "enabled": true
+    },
+    "telegram": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Volumes/Code/telegram-mcp",
+        "run",
+        "main.py"
+      ],
+      "enabled": true
+    },
+    "xcode": {
+      "type": "stdio",
+      "command": "xcrun",
+      "args": [
+        "mcpbridge"
+      ],
+      "enabled": true
     }
   }
 }
