@@ -4,6 +4,10 @@ tap "charmbracelet/tap", trusted: true
 tap "rileychh/tap", trusted: true
 # Run your GitHub Actions locally
 brew "act"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Static checker for GitHub Actions workflow files
+brew "actionlint"
 # Record and share terminal sessions
 brew "asciinema"
 # Toolchain of the web
@@ -74,8 +78,6 @@ brew "ranger"
 brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
-# Static analysis and lint tool, for (ba)sh scripts
-brew "shellcheck"
 # SMART hard drive monitoring
 brew "smartmontools"
 # Command-line tool to customize Spotify client
