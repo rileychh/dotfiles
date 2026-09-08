@@ -20,8 +20,8 @@
 
 # GitHub
 
-- Prefer GitHub MCP for supported GitHub operations; use `gh api` only when MCP lacks the action. After addressing multiple comments from one PR review, batch the replies into a pending review via `gh api` because MCP replies send immediately. Keep `pr://` and built-in tooling for reads, diffs, checkouts, and pushes.
-- Before creating an issue or pull request, inspect templates, conventions, and related items. Present the title, write only the body to `local://ISSUE.md` or `local://PR.md`, and submit the exact reviewed title and body only after explicit approval. For pull requests, also verify the work is committed and pushed, exclude unrelated changes, avoid duplicates, derive the correct base, and report the URL, head, and base.
+- Prefer GitHub MCP for supported GitHub operations, except when creating or updating an issue or pull request with a reviewed message: use `gh issue create`/`gh issue edit` or `gh pr create`/`gh pr edit` with `--body-file` so the proposed body is submitted verbatim instead of being reconstructed. Use `gh api` only when MCP and these exact-body commands lack the action. After addressing multiple comments from one PR review, batch the replies into a pending review via `gh api` because MCP replies send immediately. Keep `pr://` and built-in tooling for reads, diffs, checkouts, and pushes.
+- Before creating an issue or pull request, inspect templates, conventions, and related items. Present the title, write only the body to `local://ISSUE.md` or `local://PR.md`, and submit the exact reviewed title and body only after explicit approval. When requesting approval, provide the written file path and never repeat its body inline; the user reviews the file directly. Pass the resolved local file directly through `gh`'s `--body-file`; never copy, regenerate, or rewrite the reviewed body into command arguments or another tool call. For pull requests, also verify the work is committed and pushed, exclude unrelated changes, avoid duplicates, derive the correct base, and report the URL, head, and base.
 
 # Online Actions
 
