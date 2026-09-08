@@ -32,6 +32,8 @@ brew "fish"
 brew "gh"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# GitHub Model Context Protocol server for AI tools
+brew "github-mcp-server"
 # Utils for conversion of cap/pcap/pcapng WiFi dump files
 brew "hcxtools"
 # Improved top (interactive process viewer)
