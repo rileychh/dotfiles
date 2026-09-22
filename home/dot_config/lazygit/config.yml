@@ -8,3 +8,4 @@ git:
   diffRenderers:
     - command: delta --paging=never
       colorArg: always
+autoFetch: false
