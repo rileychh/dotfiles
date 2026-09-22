@@ -34,6 +34,8 @@ brew "ffmpeg"
 brew "fish"
 # GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
 # GitHub Model Context Protocol server for AI tools

@@ -5,3 +5,6 @@ os:
 notARepository: 'skip'
 git:
   overrideGpg: true
+  diffRenderers:
+    - command: delta --paging=never
+      colorArg: always

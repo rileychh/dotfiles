@@ -22,6 +22,7 @@
 [core]
 	autocrlf = input
 	excludesFile = {{ .chezmoi.homeDir }}/.config/git/excludes
+	pager = delta
 [rerere]
 	enabled = true
 [push]
@@ -31,3 +32,9 @@
 [rebase]
 	autoStash = true
 	updateRefs = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true  # use n and N to move between diff sections
+[merge]
+	conflictStyle = zdiff3
