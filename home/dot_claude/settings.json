@@ -1,6 +1,7 @@
 {
   "env": {
-    "CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE": "1"
+    "CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE": "1",
+    "CLAUDE_CODE_PLUGIN_PREFER_HTTPS": "1"
   },
   "attribution": {
     "commit": "",
