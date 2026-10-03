@@ -41,4 +41,8 @@ compaction:
   thresholdPercent: 95
 task:
   isolation:
-    mode: auto
+    enabled: true
+worktree:
+  base: /Volumes/Code/.omp/wt
+todo:
+  reminders: false
