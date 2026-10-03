@@ -3,4 +3,5 @@
 | setValueAtPath "mcpServers.github.type" "stdio"
 | setValueAtPath "mcpServers.github.command" "/bin/sh"
 | setValueAtPath "mcpServers.github.args" (list "-lc" "export GITHUB_PERSONAL_ACCESS_TOKEN=\"$(gh auth token)\" GITHUB_TOOLSETS=pull_requests; exec github-mcp-server stdio")
+| setValueAtPath "mcpServers.telegram" (dict "type" "http" "url" "http://127.0.0.1:8765/mcp")
 | toPrettyJson }}

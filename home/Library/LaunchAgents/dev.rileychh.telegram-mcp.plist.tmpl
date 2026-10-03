@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>dev.rileychh.telegram-mcp</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/uv</string>
+        <string>--directory</string>
+        <string>/Volumes/Code/telegram-mcp</string>
+        <string>run</string>
+        <string>main.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Volumes/Code/telegram-mcp</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>MCP_TRANSPORT</key>
+        <string>http</string>
+        <key>MCP_HOST</key>
+        <string>127.0.0.1</string>
+        <key>MCP_PORT</key>
+        <string>8765</string>
+        <key>MCP_ALLOWED_HOSTS</key>
+        <string>127.0.0.1:*,localhost:*</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>{{ .chezmoi.homeDir }}/Library/Logs/telegram-mcp.log</string>
+    <key>StandardErrorPath</key>
+    <string>{{ .chezmoi.homeDir }}/Library/Logs/telegram-mcp.log</string>
+</dict>
+</plist>
