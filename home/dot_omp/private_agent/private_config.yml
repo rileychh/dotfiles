@@ -1,10 +1,10 @@
 setupVersion: 2
 modelRoles:
-  default: openai-codex/gpt-5.6-sol:medium
-  smol: openai-codex/gpt-5.6-luna
-  slow: openai-codex/gpt-5.6-sol:xhigh
-  task: openai-codex/gpt-5.6-luna:high
-  advisor: openai-codex/gpt-5.6-luna:medium
+  default: openai-codex/gpt-6.1-sol:medium
+  smol: openai-codex/gpt-6-luna:high
+  slow: openai-codex/gpt-6-astra:medium
+  task: openai-codex/gpt-6.1-sol
+  tiny: chris/qwen3.8-flash-next-uncensored@iq4_xs
 defaultThinkingLevel: auto
 browser:
   headless: false
@@ -24,17 +24,12 @@ tui:
 steeringMode: all
 providers:
   autoThinkingMaxEffort: max
-  webSearchOrder:
-    - perplexity
-    - codex
-    - anthropic
-    - gemini
 hideThinkingBlock: true
 dev:
   autoqaConsent: granted
 composer:
   shape: rule
-extendedContext: false
+extendedContext: true
 compaction:
   methodOrder:
     - snapcompact
