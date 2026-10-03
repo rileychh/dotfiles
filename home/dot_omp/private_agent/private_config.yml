@@ -8,6 +8,7 @@ modelRoles:
 defaultThinkingLevel: auto
 browser:
   headless: false
+  relay: true
 display:
   cacheMissMarker: true
   shimmer: disabled
