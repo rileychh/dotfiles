@@ -17,12 +17,17 @@
 
 ## Browser Automation
 
-- Use Helium's existing profile via `omp-browser-relay`: first run `open -a Helium '<URL>'`, then attach with `browser.open({name: '…', app: {relay: true, target: '<URL or title substring>'}})` without `url`.
+- Use Helium's existing profile via `omp-browser-relay`. When the user says a page is already open, do not run `open -a Helium '<URL>'` or reopen/navigate the URL; discover the existing tab with `browser.targets({app: {relay: true}})` and attach to it. Otherwise, first run `open -a Helium '<URL>'`. Attach with `browser.open({name: '…', app: {relay: true, target: '<URL or title substring>'}})` without `url`.
 - Inspect the attached tab before acting; read with browser tools and verify rendered content. Release the attachment when finished; leave the user's page open.
-- For certificate warnings, ask the user to verify the exact endpoint and dismiss the warning manually. Do not enable computer tools or bypass TLS checks.
+- For certificate warnings in Helium, ask the user to verify the exact endpoint and dismiss the warning manually. Do not enable computer tools to dismiss the warning.
 - Check immediately after an ask-tool response; do not wait for another "done."
 - Distinguish a loaded page from an attachable relay target. Report blockers; do not assume warning dismissal restores discovery.
 - Do not change profiles, launch alternate browsers/CDP instances, or alter trust/extension settings without explicit approval.
+
+## Documentation
+
+- Keep golden (canonical, maintained) documentation self-contained and product-focused. Never include development provenance such as PR references, chat/message IDs, or agent-specific testing anecdotes; keep these in development reports instead.
+- Keep changes within the requested scope. Do not add documentation, rewrite comments, or perform adjacent cleanup merely because a file is being touched. Change supporting content only when explicitly requested or necessary to keep it accurate after the requested change; report verification in chat rather than adding it to repository documentation.
 
 ## Version Control
 
