@@ -18,6 +18,10 @@
 - In source code, avoid numbered step comments; use descriptive comments that remain valid when code is reordered.
 - If an unresolved choice would materially change the result, present concise options and wait before making choice-dependent edits. Otherwise, choose the best-supported approach and proceed.
 
+## Version Control
+
+- When writing a commit message, follow the repository's existing commit-message conventions. Inspect recent commits when the convention is unclear.
+
 ## External Sources
 
 - For version-sensitive technical claims, verify against current primary documentation for the relevant version.
