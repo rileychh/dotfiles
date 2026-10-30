@@ -7,6 +7,7 @@
 - `psql` is not on `PATH`; use `/opt/homebrew/opt/libpq/bin/psql`.
 - For ASS, subtitle, or OCR filters, use `/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg`; the `ffmpeg` on `PATH` lacks them.
 - The interactive shell is `/opt/homebrew/bin/fish`; the login shell is `/bin/zsh`.
+- Run `git` from the repository directory, using `cd <repo> && git …` when the working directory differs. Use `git -C <repo>` only when nothing else works, such as when the command must not change the working directory; it is not covered by the permission rules and will prompt.
 
 ## Testing and Debugging
 
