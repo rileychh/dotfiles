@@ -12,7 +12,7 @@ export default {
       browser: "Facebook",
     },
     {
-      match: ["maps.app.goo.gl/*", "www.google.com/maps/*"],
+      match: ["maps.app.goo.gl/*", "www.google.com/maps/*", "maps.google.com/*"],
       browser: "Google 地圖",
     },
     {
