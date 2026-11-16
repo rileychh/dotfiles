@@ -7,6 +7,7 @@ description: Drive any app on an Android device or emulator via adb for manual E
 
 ### Android device / emulator
 
+- `emulator` is a long-running, blocking command. Always launch it as a background task. Check for an existing emulator first; reuse it when appropriate.
 - Make sure the build under test is installed and launchable (e.g. `adb install -r <apk>`, then launch via `adb shell monkey -p <package> -c android.intent.category.LAUNCHER 1`, or for Flutter `flutter run` in the background so logs are inspectable).
 - Run `adb devices` once to see what's attached:
   - **One device:** plain `adb` and the helper scripts below work as-is.
