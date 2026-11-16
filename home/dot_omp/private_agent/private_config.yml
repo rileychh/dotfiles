@@ -1,10 +1,10 @@
-setupVersion: 2
+setupVersion: 3
 modelRoles:
-  default: openai-codex/gpt-6.1-sol:medium
+  tiny: chris/qwen3.8-flash-next-uncensored@iq4_xs
   smol: openai-codex/gpt-6-luna:high
+  default: openai-codex/gpt-6.1-sol:medium
   slow: openai-codex/gpt-6-astra:medium
   task: openai-codex/gpt-6.1-sol
-  tiny: chris/qwen3.8-flash-next-uncensored@iq4_xs
 defaultThinkingLevel: auto
 browser:
   headless: false
@@ -21,6 +21,8 @@ statusLine:
   transparent: true
 tui:
   codexResetFireworks: true
+  vimMode: true
+  vimModeDisplay: icon
 steeringMode: all
 providers:
   autoThinkingMaxEffort: max
@@ -46,6 +48,21 @@ worktree:
 todo:
   reminders: false
 codexResets:
-  autoRedeem: "no"
-tier:
-  openai: priority
+  autoRedeem5h: "no"
+  autoRedeemWeekly: "no"
+update:
+  auto: true
+modelPresets:
+  openai-codex:
+    modelRoles:
+      default: openai-codex/gpt-6.1-sol:medium
+      smol: openai-codex/gpt-6-luna:high
+      slow: openai-codex/gpt-6-astra:medium
+      task: openai-codex/gpt-6.1-sol
+    defaultThinkingLevel: auto
+  google-agent-platform:
+    modelRoles:
+      smol: google-vertex/gemini-4-hydrogen:medium
+      default: google-vertex/gemini-4-argon:medium
+      slow: google-vertex/gemini-4-carbon:high
+    defaultThinkingLevel: auto
