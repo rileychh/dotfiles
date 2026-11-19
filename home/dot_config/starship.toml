@@ -24,6 +24,9 @@ vimcmd_replace_one_symbol = "[](purple)"
 vimcmd_replace_symbol = "[](purple)"
 vimcmd_visual_symbol = "[](yellow)"
 
+[gcloud]
+disabled = true
+
 # https://starship.rs/presets/nerd-font
 [aws]
 symbol = "  "
