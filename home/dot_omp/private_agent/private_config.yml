@@ -31,6 +31,7 @@ dev:
   autoqaConsent: granted
 composer:
   shape: rule
+  tokenRate: true
 extendedContext: true
 compaction:
   methodOrder:
@@ -66,3 +67,5 @@ modelPresets:
       default: google-vertex/gemini-4-argon:medium
       slow: google-vertex/gemini-4-carbon:high
     defaultThinkingLevel: auto
+title:
+  icons: boring
